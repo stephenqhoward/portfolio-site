@@ -25,7 +25,7 @@ const Home: NextPage = () => {
             </div>
             <div>
               <h2>Skills</h2>
-              <p>JavaScript - Python - ReactJs - Django - PostgreSQL - Typescript - Tailwind - HTML - CSSS - Git - GitHub - Slack</p>
+              <p>JavaScript - Python - ReactJs - Django - PostgreSQL - Typescript - Tailwind - HTML - CSS - Git - GitHub - Slack</p>
             </div>
           </section>
           <section>
