@@ -16,8 +16,8 @@ type NavbarProps = {
 const Navbar: FC<NavbarProps> = ({ logo, subTitle, links }) => (
   <div className="container color-white px-4">
     <div>
-      { logo }
-      <h2>{ subTitle }</h2>
+      <h2>{ logo }</h2>
+      <h3>{ subTitle }</h3>
     </div>
     <div>
       <ul>

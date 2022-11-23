@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import { Navbar } from "../components/Navbar";
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#15222c] to-[#022b6d]">
+        <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#About'}, {displayText: 'Portfolio', anchor: '#Portfolio'}, {displayText: 'Social', anchor: '#Social'}, {displayText: 'Resume', anchor: '#Resume'} ]}></Navbar>
         <section>
           <h1>Welcome to Stephen Q. Howard&apos;s portfolio site.</h1>
           <p>Please excuse the saw dust as I spin this up!</p>
