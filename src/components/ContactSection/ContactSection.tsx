@@ -22,7 +22,7 @@ const ContactSection: FC<ContactSectionProps> = ({
   liTitles,
   logo,
 }) => {
-  const linkCheck = (type, detail) => {
+  const linkCheck = (type: string, detail: string) => {
     switch (type) {
       case "phone":
         return <a href={`tel:${detail}`}>{detail}</a>;
@@ -59,7 +59,7 @@ const ContactSection: FC<ContactSectionProps> = ({
                 <i
                   className={`ml-0 m-2 text-lg text-gold ${contactType.bulletIcon}`}
                 ></i>
-                {linkCheck(contactType.type, contactType.bulletDetail)}
+                {linkCheck(contactType.type!, contactType.bulletDetail)}
               </li>
             );
           })}

@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#15222c] to-[#022b6d]">
         <section>
-          <h1>Welcome to Stephen Q. Howard's portfolio site.</h1>
+          <h1>Welcome to Stephen Q. Howard&apos;s portfolio site.</h1>
           <p>Please excuse the saw dust as I spin this up!</p>
         </section>
         <section>
