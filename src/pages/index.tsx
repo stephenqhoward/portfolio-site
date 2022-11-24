@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
         <div className="container flex flex-col items-center justify-center">
           
-          <section className="flex flex-col min-h-screen min-w-full bg-cream color-light-blue items-center justify-center">
+          <section className="flex flex-col min-h-[80vh] min-w-full bg-cream color-light-blue items-center justify-center">
             <h1 className="text-deep-blue font-bold">Welcome to Stephen Q Howard&apos;s portfolio site.</h1>
             <p className="text-red">Please excuse the saw dust as I spin this up!</p>
           </section>
@@ -51,24 +51,29 @@ const Home: NextPage = () => {
           </section>
 
           <section className="container min-h-[20vh] bg-deep-blue" id="social">
-            <ul className="flex flex-row justify-center items-center min-h-[50px] my-8">
-              <a href='https://www.linkedin.com/in/stephenqhoward/' className="mr-12 flex items-center bg-light-blue rounded-full">
-                <li className="flex h-[90px] w-[90px] place-self-center">
-                  <Image alt="LinkedIn" src={ LinkedInLogo } width={45} className="m-auto self-center"></Image>
-                </li>
-              </a>
-              <a href='https://github.com/stephenqhoward' className="bg-light-blue mr-12 rounded-full">
-                <li className="flex text-center justify-items-center h-[90px] w-[90px]">
-                  <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center"></Image>
-                </li>
-              </a>
-              <a href='#resume' className="bg-light-blue rounded-full">
-                <li className="flex h-[90px] w-[90px]">
-                  <p className="self-center mx-auto font-bold">Resume
-                  </p>
-                </li>
-              </a>
-            </ul>
+            <div>
+              <ul className="flex flex-row justify-center items-center min-h-[50px] my-8">
+                <a href='https://www.linkedin.com/in/stephenqhoward/' className="mr-12 flex items-center bg-light-blue rounded-full">
+                  <li className="flex h-[90px] w-[90px] place-self-center">
+                    <Image alt="LinkedIn" src={ LinkedInLogo } width={45} className="m-auto self-center"></Image>
+                  </li>
+                </a>
+                <a href='https://github.com/stephenqhoward' className="bg-light-blue mr-12 rounded-full">
+                  <li className="flex text-center justify-items-center h-[90px] w-[90px]">
+                    <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center"></Image>
+                  </li>
+                </a>
+                <a href='#resume' className="bg-light-blue rounded-full">
+                  <li className="flex h-[90px] w-[90px]">
+                    <p className="self-center mx-auto font-bold">Resume
+                    </p>
+                  </li>
+                </a>
+              </ul>
+            </div>
+            <div className="flex justify-center">
+              <p className="text-color-cream font-thin">&copy; 2022 - Stephen Howard</p>
+            </div>
           </section>
 
         </div>
