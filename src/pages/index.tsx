@@ -19,14 +19,14 @@ const Home: NextPage = () => {
 
         <div className="container flex flex-col items-center justify-center">
           
-          <section className="min-h-screen min-w-full bg-cream color-light-blue">
-            <h1 className="">Welcome to Stephen Q Howard&apos;s portfolio site.</h1>
-            <p className="">Please excuse the saw dust as I spin this up!</p>
+          <section className="flex flex-col min-h-[80vh] min-w-full bg-cream color-light-blue items-center justify-center">
+            <h1 className="text-deep-blue font-bold">Welcome to Stephen Q Howard&apos;s portfolio site.</h1>
+            <p className="text-red">Please excuse the saw dust as I spin this up!</p>
           </section>
           
-          <section className="container min-h-[40vh] flex flex-row flex-wrap bg-blue" id="about">
-            <div className="mr-36 px-10">
-              <h2>About Me</h2>
+          <section className="container min-h-[40vh] flex flex-row flex-wrap bg-blue py-6" id="about">
+            <div className="mr-36 px-10 pb-4">
+              <h2 className="">About Me</h2>
               <ul className="">
                 <li className="pt-3">I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.</li>
                 <li className="pt-3">I have a history of researching and implementing technical solutions to business problems.</li>
@@ -40,35 +40,40 @@ const Home: NextPage = () => {
             </div>
           </section>
 
-          <section className="container min-h-[80vh] bg-cream" id="portfolio">
+          <section className="container min-h-[80vh] bg-cream px-10" id="portfolio">
             <h2 className="">Portfolio</h2>
             <div>
-              <h3>Urankar Law, LLC</h3>
+              <h3 className="text-deep-blue">Urankar Law, LLC</h3>
             </div>
             <div>
-              <h3>Discing Up</h3>
+              <h3 className="text-deep-blue">Discing Up</h3>
             </div>
           </section>
 
           <section className="container min-h-[20vh] bg-deep-blue" id="social">
-            <ul className="flex flex-row justify-center items-center min-h-[50px] my-8">
-              <a href='https://www.linkedin.com/in/stephenqhoward/' className="mr-12 flex items-center bg-light-blue rounded-full">
-                <li className="flex h-[90px] w-[90px] place-self-center">
-                  <Image alt="LinkedIn" src={ LinkedInLogo } width={45} className="m-auto self-center"></Image>
-                </li>
-              </a>
-              <a href='https://github.com/stephenqhoward' className="bg-light-blue mr-12 rounded-full">
-                <li className="flex text-center justify-items-center h-[90px] w-[90px]">
-                  <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center"></Image>
-                </li>
-              </a>
-              <a href='#resume' className="bg-light-blue rounded-full">
-                <li className="flex h-[90px] w-[90px]">
-                  <p className="self-center mx-auto font-bold">Resume
-                  </p>
-                </li>
-              </a>
-            </ul>
+            <div>
+              <ul className="flex flex-row justify-center items-center min-h-[50px] my-8">
+                <a href='https://www.linkedin.com/in/stephenqhoward/' className="mr-12 flex items-center bg-light-blue rounded-full">
+                  <li className="flex h-[90px] w-[90px] place-self-center">
+                    <Image alt="LinkedIn" src={ LinkedInLogo } width={45} className="m-auto self-center"></Image>
+                  </li>
+                </a>
+                <a href='https://github.com/stephenqhoward' className="bg-light-blue mr-12 rounded-full">
+                  <li className="flex text-center justify-items-center h-[90px] w-[90px]">
+                    <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center"></Image>
+                  </li>
+                </a>
+                <a href='#resume' className="bg-light-blue rounded-full">
+                  <li className="flex h-[90px] w-[90px]">
+                    <p className="self-center mx-auto font-bold">Resume
+                    </p>
+                  </li>
+                </a>
+              </ul>
+            </div>
+            <div className="flex justify-center">
+              <p className="text-color-cream font-thin">&copy; 2022 - Stephen Howard</p>
+            </div>
           </section>
 
         </div>
