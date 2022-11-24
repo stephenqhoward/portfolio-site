@@ -21,6 +21,7 @@ h3, p, li {
 
 h1, h2 {
   color: #A8DADC;
+  font-weight: bold;
 }
 
 a:hover,
