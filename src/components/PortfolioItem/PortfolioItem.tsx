@@ -1,17 +1,17 @@
-import { FC } from "react";
+import { type FC } from "react";
 
 export type Category = {
   img: string;
   category: string;
 };
 
-type SectionProps = {
+type PortfolioItemProps = {
   description?: string;
   title: string;
   categories: Array<Category>;
 };
 
-const Section: FC<SectionProps> = ({ title, description, categories }) => (
+const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, categories }) => (
   <div className="flex flex-col px-4 color-white py-16 w-full h-auto container">
     <div className="sm:my-5">
       <p className="text-4xl m-0">{title}</p>
@@ -36,4 +36,4 @@ const Section: FC<SectionProps> = ({ title, description, categories }) => (
   </div>
 );
 
-export default Section;
+export default PortfolioItem;
