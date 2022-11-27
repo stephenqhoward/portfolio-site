@@ -6,6 +6,7 @@ import Image from 'next/image'
 // Custom Components
 import { Navbar } from "../components/Navbar";
 import { PortfolioItem } from '../components/PortfolioItem';
+import { Bio } from '../components/Bio';
 
 // Images
 import LinkedInLogo from '../../public/img/linkedin-app-icon.svg';
@@ -39,20 +40,11 @@ const Home: NextPage = () => {
             <p className="text-red">Please excuse the saw dust as I spin this up!</p>
           </section>
           
-          <section className="container min-h-[40vh] flex flex-row flex-wrap bg-blue py-6" id="about">
-            <div className="mr-36 px-10 pb-4">
-              <h2 className="">About Me</h2>
-              <ul className="">
-                <li className="pt-3">I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.</li>
-                <li className="pt-3">I have a history of researching and implementing technical solutions to business problems.</li>
-                <li className="pt-3">You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.</li>
-                <li className="pt-3">I am looking for experience that will provide awareness for what I don&apos;t know, an understanding of the necessary structure for high performing software development teams, and the core technical competency to prototype my startup ideas.</li>
-              </ul>
-            </div>
-            <div className="px-10">
-              <h2>Skills</h2>
-              <p>JavaScript - Python - ReactJs - Django - PostgreSQL - Typescript - Tailwind - HTML - CSS - Git - GitHub - Slack</p>
-            </div>
+          <section className="container min-h-[40vh] flex flex-col flex-wrap bg-blue pt-6 pb-12 px-10" id="about">
+            <Bio
+              text={['I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.','I have a history of researching and implementing technical solutions to business problems.','You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.',`I am looking for experience that will provide awareness for what I don't know, an understanding of the necessary structure for high performing software development teams, and the core technical competency to prototype and scale startup ideas.`]}
+              skills={['JavaScript','Python','ReactJs','Django','PostgreSQL','Typescript','Tailwind','HTML','CSS','Git','GitHub','Slack']}
+            ></Bio>
           </section>
 
           <section className="container bg-cream px-10 pt-6 pb-12 flex flex-col items-center space-y-4" id="portfolio">
