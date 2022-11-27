@@ -35,14 +35,15 @@ const Home: NextPage = () => {
 
         <div className="container flex flex-col items-center justify-center">
           
-          <section className="flex flex-col min-h-[80vh] min-w-full bg-cream color-light-blue items-center justify-center">
-            <h1 className="text-deep-blue font-bold">Welcome to Stephen Q Howard&apos;s portfolio site.</h1>
+          <section className="flex flex-col min-h-[58vh] min-w-full bg-cream color-light-blue items-center justify-center">
+            <h1 className="text-deep-blue font-bold text-4xl">{`Hi! I'm Stephen.`} </h1>
+            <h2 className="text-2xl">Former Certified Public Accountant (CPA) - Current Full Stack Developer</h2>
             <p className="text-red">Please excuse the saw dust as I spin this up!</p>
           </section>
           
           <section className="container min-h-[40vh] flex flex-col flex-wrap bg-blue pt-6 pb-12 px-10" id="about">
             <Bio
-              text={['I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.','I have a history of researching and implementing technical solutions to business problems.','You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.',`I am looking for experience that will provide awareness for what I don't know, an understanding of the necessary structure for high performing software development teams, and the core technical competency to prototype and scale startup ideas.`]}
+              text={['I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.','I have a history of researching and implementing technical solutions to business problems.','You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.',`I am looking for experience that will provide awareness for what I don't know, the structure for high performing software development teams, and the core technical competency to prototype and scale startup ideas.`]}
               skills={['JavaScript','Python','ReactJs','Django','PostgreSQL','Typescript','Tailwind','HTML','CSS','Git','GitHub','Slack']}
             ></Bio>
           </section>
