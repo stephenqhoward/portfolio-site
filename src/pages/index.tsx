@@ -18,6 +18,7 @@ import VercelLogo from '../../public/img/vercel.svg';
 import TrpcLogo from '../../public/img/trpc-seeklogo.com.svg';
 import PrismaLogo from '../../public/img/prisma-2.svg';
 import PostgresqlLogo from '../../public/img/postgresql-icon.svg';
+import ZodLogo from '../../public/img/zod-icon.png';
 
 const Home: NextPage = () => {
   return (
@@ -60,9 +61,11 @@ const Home: NextPage = () => {
               title="Urankar Law, LLC - Landing Page"
               description="Referencing the client&apos;s theme, built and styled the landing page layout and components."
               technologies= {[
-                {src: NextJsLogo, alt: 'Next.js', width: 175}, 
-                {src: ReactLogo, alt: 'React.js', width: 50}, 
-                {src: TypescriptLogo, alt: 'Typescript', width: 45}, {src: TailwindLogo, alt: 'Tailwind CSS', width: 60}, {src: VercelLogo, alt: 'Vercel', width: 175}
+                {src: NextJsLogo, alt: 'Next.js', width: 115, url: 'https://nextjs.org/'}, 
+                {src: ReactLogo, alt: 'React.js', width: 30}, 
+                {src: TypescriptLogo, alt: 'Typescript', width: 30}, 
+                {src: TailwindLogo, alt: 'Tailwind CSS', width: 35}, 
+                {src: VercelLogo, alt: 'Vercel', width: 105}
               ]}
               url="http://urankarlaw.com"
               buttons={[
@@ -83,15 +86,18 @@ const Home: NextPage = () => {
               title="Discing Up - Full Stack Web Application"
               description="Web application for monitoring weather and reporting course conditions for disc golf courses in central Ohio."
               technologies= {[
-                {src: NextJsLogo, alt: 'Next.js', width: 175}, 
-                {src: ReactLogo, alt: 'React.js', width: 50}, 
-                {src: TypescriptLogo, alt: 'Typescript', width: 45},  {src: TrpcLogo, alt: 'tRPC', width: 40},
-                {src: PrismaLogo, alt: 'Prisma', width: 125},
-                {src: PostgresqlLogo, alt: 'PostgreSQL', width: 55},
-                {src: TailwindLogo, alt: 'Tailwind CSS', width: 60},
-                {src: VercelLogo, alt: 'Vercel', width: 175},
+                {src: NextJsLogo, alt: 'Next.js', width: 115, url: 'https://nextjs.org/'}, 
+                {src: ReactLogo, alt: 'React.js', width: 40, url: 'https://reactjs.org/'}, 
+                {src: TypescriptLogo, alt: 'Typescript', width: 35, url: 'https://www.typescriptlang.org/'},  
+                {src: TrpcLogo, alt: 'tRPC', width: 35, url: 'https://trpc.io/'},
+                {src: PrismaLogo, alt: 'Prisma', width: 105, url: 'https://www.prisma.io/'},
+                {src: ZodLogo, alt: 'Zod', width: 45, url: 'https://github.com/colinhacks/zod'},
+                {src: PostgresqlLogo, alt: 'PostgreSQL', width: 40, url:'https://www.postgresql.org/'},
+                {src: TailwindLogo, alt: 'Tailwind CSS', width: 40, url: 'https://tailwindcss.com/'},
+                {src: VercelLogo, alt: 'Vercel', width: 105, url: 'https://vercel.com/'},
               ]}
-              url="http://urankarlaw.com"
+              // https://discing-up.vercel.app/
+              url=""
               buttons={[
                 {url: 'http://urankarlaw.com', type: 'site', text: 'Live Site'}, 
                 {type: 'disabled', text: 'GitHub', subtext:'(Private Repo)'}
@@ -109,7 +115,7 @@ const Home: NextPage = () => {
           </section>
 
           <section className="container min-h-[20vh] bg-deep-blue" id="social">
-            <div>
+            <div className="footer">
               <ul className="flex flex-row justify-center items-center min-h-[50px] my-8">
                 <a href='https://www.linkedin.com/in/stephenqhoward/' className="mr-12 flex items-center bg-light-blue rounded-full">
                   <li className="flex h-[90px] w-[90px] place-self-center">
