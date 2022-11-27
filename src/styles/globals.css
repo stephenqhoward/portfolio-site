@@ -25,8 +25,7 @@ h1, h2 {
 }
 
 .footer ul a:hover,
-.footer ul a:focus,
-.footer ul a:active {
+.footer ul a:focus {
   background-color: #E63946;
 }
 /* Curve Navbar */
