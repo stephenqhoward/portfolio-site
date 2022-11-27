@@ -1,1 +1,1 @@
-export { default as Portfolio } from "./PortfolioItem";
+export { default as PortfolioItem } from "./PortfolioItem";
