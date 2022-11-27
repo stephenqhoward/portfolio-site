@@ -1,7 +1,11 @@
+// Next
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from 'next/image'
+
+// Custom Components
 import { Navbar } from "../components/Navbar";
+import { PortfolioItem } from '../components/PortfolioItem';
 
 // Images
 import LinkedInLogo from '../../public/img/linkedin-app-icon.svg';
@@ -10,7 +14,6 @@ import NextJsLogo from '../../public/img/nextjs-icon.svg';
 import ReactLogo from '../../public/img/react-js-icon.svg';
 import TypescriptLogo from '../../public/img/typescript-programming-language-icon.svg';
 import TailwindLogo from '../../public/img/tailwind-css-icon.svg';
-import UrankarLawThumbnail from '../../public/img/Urankar-Law-Thumbnail.png';
 import VercelLogo from '../../public/img/vercel.svg';
 import TrpcLogo from '../../public/img/trpc-seeklogo.com.svg';
 import PrismaLogo from '../../public/img/prisma-2.svg';
@@ -51,71 +54,58 @@ const Home: NextPage = () => {
             </div>
           </section>
 
-          <section className="container min-h-[80vh] bg-cream px-10 py-6" id="portfolio">
-            <h2 className="text-4xl mb-6">PORTFOLIO</h2>
-            <div className="flex flex-row sm:flex-wrap">
-              <div className="flex flex-col flex-grow flex-wrap">
-                <div className="self-end">
-                  <h3 className="text-deep-blue text-lg font-bold">Urankar Law, LLC - Landing Page</h3>
-                  <div className="w-[80%] flex flex-col">
-                    <ul className="text-deep-blue my-4">
-                      <li className="flex flex-row flex-wrap">
-                        <Image src={ NextJsLogo } alt="Next.js" width={125} className="mr-8"></Image>
-                        <Image src={ ReactLogo } alt="React.js" width={60} className="mr-8"></Image>
-                        <Image src={ TypescriptLogo } alt="Typescript" width={60} className="mr-8"></Image>
-                        <Image src={ TailwindLogo } alt="Tailwind CSS" width={60} className="mr-8"></Image>
-                        <Image src={ VercelLogo } alt="Vercel" width={150} className="px-auto"></Image>
-                      </li>
-                      <li className="text-deep-blue mt-5">Description: Referencing the client&apos;s theme, built and styled the landing page layout and components.</li>
-                    </ul>
-                  </div>
-                  <div className="mt-10 flex flex-row">
-                    <a href="http://urankarlaw.com" className="bg-red w-32 rounded-xl h-16 text-lg font-bold" target="_blank" rel="noreferrer"><button className="w-32 h-16 text-cream">Live Site</button></a>
-                    <div className="w-32 h-16 bg-slate-800 rounded-xl ml-8 text-cream text-center"><p className="text-lg font-bold">GitHub</p><p className="font-thin text-sm">(Private Repo)</p></div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex w-[25vw] items-center">
-                <a href="http://urankarlaw.com" className="rounded-xl text-lg font-bold" target="_blank" rel="noreferrer">
-                  <Image src={ UrankarLawThumbnail } alt="Urankar Law - Thumbnail" width={400} className="drop-shadow-[8px_8px_8px_rgba(0,0,0,0.5)] skew-y-3 px-auto rounded-md"></Image>
-                </a>
-              </div>
-            </div>
-            <div className="min-h-[40vh] flex flex-row my-16">
-              <div className="flex flex-col justify-center w-[25vw]">
-                <Image src={ UrankarLawThumbnail } alt="Urankar Law - Thumbnail" width={400} className="drop-shadow-[-8px_8px_8px_rgba(0,0,0,0.5)] -skew-y-3 px-auto rounded-md"></Image>
-              </div>
-              <div className="w-[50%] flex flex-col items-end">
-                <div className="w-[30vw] flex flex-col items-end">
-                  <h3 className="text-deep-blue text-lg font-bold">Discing Up - Full Stack Web Application</h3>
-                  <ul className="text-deep-blue flex flex-col">
-                    <li className="flex flex-row flex-wrap my-4 justify-end space-x-8">
-                      <Image src={ NextJsLogo } alt="Next.js" width={125} className=""></Image>
-                      <Image src={ ReactLogo } alt="React.js" width={60} className=""></Image>
-                      <Image src={ TypescriptLogo } alt="Typescript" width={50} className=""></Image>
-                      <Image src={ TrpcLogo } alt="tRPC" width={40} className=""></Image>
-                      <Image src={ PrismaLogo } alt="Prisma" width={100} className=""></Image>
-                      <Image src={ PostgresqlLogo } alt="PostgreSQL" width={55} className=""></Image>
-                      <Image src={ TailwindLogo } alt="Tailwind CSS" width={60} className=""></Image>
-                      <Image src={ VercelLogo } alt="Vercel" width={150} className="px-auto"></Image>
-                    </li>
-                    <li className="text-deep-blue">Description: Web application for monitoring weather and reporting course conditions for disc golf courses in central Ohio.</li>
-                  </ul>
-                  <div className="flex flex-row mt-10">
-                    {/* <a href="#discing-up" className="bg-red w-32 rounded-xl h-16 text-lg font-bold" target="_blank" rel="noreferrer">
-                      <button className="w-32 h-16 text-cream">Live Site</button>
-                    </a> */}
-                    <div className="w-32 h-16 bg-light-blue rounded-xl text-cream text-center">
-                      <p className="text-lg font-bold text-center">Coming Soon!</p>
-                    </div>
-                    <div className="w-32 h-16 bg-slate-800 rounded-xl ml-8 text-cream text-center">
-                      <p className="text-lg font-bold">GitHub</p>
-                      <p className="font-thin text-sm">(Private Repo)</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <section className="container bg-cream px-10 pt-6 pb-12 flex flex-col items-center space-y-4" id="portfolio">
+            <h2 className="text-4xl self-start">PORTFOLIO</h2>
+            <PortfolioItem 
+              title="Urankar Law, LLC - Landing Page"
+              description="Referencing the client&apos;s theme, built and styled the landing page layout and components."
+              technologies= {[
+                {src: NextJsLogo, alt: 'Next.js', width: 175}, 
+                {src: ReactLogo, alt: 'React.js', width: 50}, 
+                {src: TypescriptLogo, alt: 'Typescript', width: 45}, {src: TailwindLogo, alt: 'Tailwind CSS', width: 60}, {src: VercelLogo, alt: 'Vercel', width: 175}
+              ]}
+              url="http://urankarlaw.com"
+              buttons={[
+                {url: 'http://urankarlaw.com', type: 'live', text: 'Live Site'}, 
+                {type: 'disabled', text: 'GitHub', subtext:'(Private Repo)'}
+              ]}
+              img={
+                {
+                  src: '/../public/img/Urankar-Law-Thumbnail.png',
+                  alt: 'Urankar Law, LLC',
+                  width: 350,
+                  height: 400,
+                }
+              }
+              imgPosition="right"
+            ></PortfolioItem>
+            <PortfolioItem 
+              title="Discing Up - Full Stack Web Application"
+              description="Web application for monitoring weather and reporting course conditions for disc golf courses in central Ohio."
+              technologies= {[
+                {src: NextJsLogo, alt: 'Next.js', width: 175}, 
+                {src: ReactLogo, alt: 'React.js', width: 50}, 
+                {src: TypescriptLogo, alt: 'Typescript', width: 45},  {src: TrpcLogo, alt: 'tRPC', width: 40},
+                {src: PrismaLogo, alt: 'Prisma', width: 125},
+                {src: PostgresqlLogo, alt: 'PostgreSQL', width: 55},
+                {src: TailwindLogo, alt: 'Tailwind CSS', width: 60},
+                {src: VercelLogo, alt: 'Vercel', width: 175},
+              ]}
+              url="http://urankarlaw.com"
+              buttons={[
+                {url: 'http://urankarlaw.com', type: 'site', text: 'Live Site'}, 
+                {type: 'disabled', text: 'GitHub', subtext:'(Private Repo)'}
+              ]}
+              img={
+                {
+                  src: '/../public/img/discing-up-thumbnail.png',
+                  alt: 'Urankar Law, LLC',
+                  width: 350,
+                  height: 400,
+                }
+              }
+              imgPosition="left"
+            ></PortfolioItem>
           </section>
 
           <section className="container min-h-[20vh] bg-deep-blue" id="social">
@@ -127,7 +117,6 @@ const Home: NextPage = () => {
                   </li>
                 </a>
                 <a href='https://github.com/stephenqhoward' className="bg-light-blue mr-12 rounded-full">
-                {/* filter: invert(91%) sepia(20%) saturate(428%) hue-rotate(131deg) brightness(91%) contrast(88%) */}
                   <li className="flex text-center justify-items-center h-[90px] w-[90px]">
                     <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center h-[50px] w-[50px]"></Image>
                   </li>
