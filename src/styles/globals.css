@@ -29,3 +29,89 @@ h1, h2 {
 .footer ul a:active {
   background-color: #E63946;
 }
+/* Curve Navbar */
+.curve-divider-navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.curve-divider-navbar svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 10px;
+}
+
+.curve-divider-navbar .shape-fill {
+  fill: #1D3557;
+}
+
+/* Wavy Hero */
+.wavy-divider-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wavy-divider-hero svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.wavy-divider-hero .shape-fill {
+  fill: #457B9D;
+}
+
+/* Wavy Bio */
+.wavy-divider-bio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wavy-divider-bio svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30px;
+}
+
+.wavy-divider-bio .shape-fill {
+  fill: #457B9D;
+}
+
+/* Wavy Footer */
+.wave-divider-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-divider-footer svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.wave-divider-footer .shape-fill {
+  fill: #1D3557;
+}
