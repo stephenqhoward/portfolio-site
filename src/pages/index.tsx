@@ -39,6 +39,7 @@ const Home: NextPage = () => {
             <h1 className="text-deep-blue font-bold text-4xl">{`Hi! I'm Stephen.`} </h1>
             <h2 className="text-2xl">Former Certified Public Accountant (CPA) - Current Full Stack Developer</h2>
             <p className="text-red">Please excuse the saw dust as I spin this up!</p>
+            <p className="text-deep-blue">Site Version 0.6</p>
           </section>
           
           <section className="container min-h-[40vh] flex flex-col flex-wrap bg-blue pt-6 pb-12 px-10" id="about">
