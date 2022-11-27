@@ -71,7 +71,7 @@ const Home: NextPage = () => {
               ]}
               img={
                 {
-                  src: '/static/Urankar-Law-Thumbnail.png',
+                  src: '/img/Urankar-Law-Thumbnail.png',
                   // src: '/../public/img/Urankar-Law-Thumbnail.png',
                   alt: 'Urankar Law, LLC',
                   width: 350,
