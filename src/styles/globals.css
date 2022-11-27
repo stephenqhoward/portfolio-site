@@ -24,8 +24,8 @@ h1, h2 {
   font-weight: bold;
 }
 
-a:hover,
-a:focus,
-a:active {
+ul a:hover,
+ul a:focus,
+ul a:active {
   background-color: #E63946;
 }

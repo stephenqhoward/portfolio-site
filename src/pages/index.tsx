@@ -1,9 +1,23 @@
+// Next
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from 'next/image'
+
+// Custom Components
 import { Navbar } from "../components/Navbar";
-import GitHubLogo from '../../public/GitHub_Logo_White.png';
-import LinkedInLogo from '../../public/In-White-26.png';
+import { PortfolioItem } from '../components/PortfolioItem';
+
+// Images
+import LinkedInLogo from '../../public/img/linkedin-app-icon.svg';
+import GitHubLogo from '../../public/img/github-icon.svg';
+import NextJsLogo from '../../public/img/nextjs-icon.svg';
+import ReactLogo from '../../public/img/react-js-icon.svg';
+import TypescriptLogo from '../../public/img/typescript-programming-language-icon.svg';
+import TailwindLogo from '../../public/img/tailwind-css-icon.svg';
+import VercelLogo from '../../public/img/vercel.svg';
+import TrpcLogo from '../../public/img/trpc-seeklogo.com.svg';
+import PrismaLogo from '../../public/img/prisma-2.svg';
+import PostgresqlLogo from '../../public/img/postgresql-icon.svg';
 
 const Home: NextPage = () => {
   return (
@@ -40,14 +54,58 @@ const Home: NextPage = () => {
             </div>
           </section>
 
-          <section className="container min-h-[80vh] bg-cream px-10" id="portfolio">
-            <h2 className="">Portfolio</h2>
-            <div>
-              <h3 className="text-deep-blue">Urankar Law, LLC</h3>
-            </div>
-            <div>
-              <h3 className="text-deep-blue">Discing Up</h3>
-            </div>
+          <section className="container bg-cream px-10 pt-6 pb-12 flex flex-col items-center space-y-4" id="portfolio">
+            <h2 className="text-4xl self-start">PORTFOLIO</h2>
+            <PortfolioItem 
+              title="Urankar Law, LLC - Landing Page"
+              description="Referencing the client&apos;s theme, built and styled the landing page layout and components."
+              technologies= {[
+                {src: NextJsLogo, alt: 'Next.js', width: 175}, 
+                {src: ReactLogo, alt: 'React.js', width: 50}, 
+                {src: TypescriptLogo, alt: 'Typescript', width: 45}, {src: TailwindLogo, alt: 'Tailwind CSS', width: 60}, {src: VercelLogo, alt: 'Vercel', width: 175}
+              ]}
+              url="http://urankarlaw.com"
+              buttons={[
+                {url: 'http://urankarlaw.com', type: 'live', text: 'Live Site'}, 
+                {type: 'disabled', text: 'GitHub', subtext:'(Private Repo)'}
+              ]}
+              img={
+                {
+                  src: '/img/Urankar-Law-Thumbnail.png',
+                  alt: 'Urankar Law, LLC',
+                  width: 350,
+                  height: 400,
+                }
+              }
+              imgPosition="right"
+            ></PortfolioItem>
+            <PortfolioItem 
+              title="Discing Up - Full Stack Web Application"
+              description="Web application for monitoring weather and reporting course conditions for disc golf courses in central Ohio."
+              technologies= {[
+                {src: NextJsLogo, alt: 'Next.js', width: 175}, 
+                {src: ReactLogo, alt: 'React.js', width: 50}, 
+                {src: TypescriptLogo, alt: 'Typescript', width: 45},  {src: TrpcLogo, alt: 'tRPC', width: 40},
+                {src: PrismaLogo, alt: 'Prisma', width: 125},
+                {src: PostgresqlLogo, alt: 'PostgreSQL', width: 55},
+                {src: TailwindLogo, alt: 'Tailwind CSS', width: 60},
+                {src: VercelLogo, alt: 'Vercel', width: 175},
+              ]}
+              url="http://urankarlaw.com"
+              buttons={[
+                {url: 'http://urankarlaw.com', type: 'site', text: 'Live Site'}, 
+                {type: 'disabled', text: 'GitHub', subtext:'(Private Repo)'}
+              ]}
+              img={
+                {
+                  src: '/img/discing-up-thumbnail.png',
+                  alt: 'Urankar Law, LLC',
+                  width: 350,
+                  height: 400,
+                }
+              }
+              imgPosition="left"
+            ></PortfolioItem>
           </section>
 
           <section className="container min-h-[20vh] bg-deep-blue" id="social">
@@ -60,7 +118,7 @@ const Home: NextPage = () => {
                 </a>
                 <a href='https://github.com/stephenqhoward' className="bg-light-blue mr-12 rounded-full">
                   <li className="flex text-center justify-items-center h-[90px] w-[90px]">
-                    <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center"></Image>
+                    <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center h-[50px] w-[50px]"></Image>
                   </li>
                 </a>
                 <a href='#resume' className="bg-light-blue rounded-full">
