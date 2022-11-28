@@ -1,0 +1,33 @@
+
+/* Portfolio Item - Urankar Law */
+.portfolio-item-wrapper {
+  width: min(1000px, 100%);
+}
+
+.portfolio-item-transition {
+  position: relative;
+  /* aspect-ratio: 2.4/1; */
+}
+
+.portfolio-item-transition:is(:hover, :focus) .portfolio-item-content {
+  -webkit-mask-position: right;
+  transition: -webkit-mask-position 1s linear;
+}
+
+.portfolio-item-cover, .portfolio-item-content {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+}
+
+.portfolio-item-cover {
+  background-image: url('../../../public/img/Urankar-Law-Thumbnail.png');
+}
+
+.portfolio-item-content {
+  -webkit-mask-image: linear-gradient(to right, transparent 47.5%, #fff 52.5%);
+  -webkit-mask-size: 210%;
+  -webkit-mask-position: left;
+}
+
+/* Portfolio Item - Discing Up */

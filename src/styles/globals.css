@@ -114,3 +114,51 @@ h1, h2 {
 .wave-divider-footer .shape-fill {
   fill: #1D3557;
 }
+
+.portfolio-item-wrapper {
+  width: min(90%);
+}
+
+.portfolio-item-transition {
+  position: relative;
+  aspect-ratio: 3.7/1;
+}
+
+.portfolio-item-cover-left, .portfolio-item-cover-right, .portfolio-item-content-left, .portfolio-item-content-right {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+}
+
+/* Portfolio Item - Urankar Law (imgPosition === right) */
+.portfolio-item-transition:is(:hover, :focus) .portfolio-item-content-right {
+  -webkit-mask-position: right;
+  transition: -webkit-mask-position 0.5s linear;
+}
+
+.portfolio-item-cover-right {
+  background-image: url('/img/Urankar-Law-Thumbnail.png');
+} 
+
+.portfolio-item-content-right {
+  -webkit-mask-image: linear-gradient(to right, transparent 47.5%, #fff 52.5%);
+  -webkit-mask-size: 210%;
+  -webkit-mask-position: left;
+}
+
+/* Portfolio Item - Discing Up (imgPosition === left) */
+.portfolio-item-transition:is(:hover, :focus) .portfolio-item-content-left {
+  -webkit-mask-position: left;
+  transition: -webkit-mask-position 0.5s linear;
+}
+
+.portfolio-item-cover-left {
+  background-image: url('/img/discing-up-thumbnail.png');
+  background-position: center;
+} 
+
+.portfolio-item-content-left {
+  -webkit-mask-image: linear-gradient(to left, transparent 47.5%, #fff 52.5%);
+  -webkit-mask-size: 210%;
+  -webkit-mask-position: right;
+}

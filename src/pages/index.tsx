@@ -53,14 +53,14 @@ const Home: NextPage = () => {
             </div>
           </section>
           
-          <section className="container min-h-[40vh] flex flex-col flex-wrap bg-blue pt-6 pb-12 px-10" id="about">
+          <section className="container flex flex-col flex-wrap bg-blue pt-6 pb-12 px-4 md:px-10" id="about">
             <Bio
               text={['I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.','I have a history of researching and implementing technical solutions to business problems.','You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.',`I am looking for experience that will provide awareness for what I don't know, the structure for high performing software development teams, and the core technical competency to prototype and scale startup ideas.`]}
               skills={['JavaScript','Python','ReactJs','Django','PostgreSQL','Typescript','Tailwind','HTML','CSS','Git','GitHub','Slack']}
             ></Bio>
           </section>
 
-          <section className="container bg-cream px-10 pt-6 pb-12 flex flex-col items-center space-y-4 relative" id="portfolio">
+          <section className="container bg-cream px-4 md:px-10 pt-6 pb-20 flex flex-col items-center space-y-4 relative h-fit" id="portfolio">
             <div className="wavy-divider-bio">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
@@ -114,7 +114,7 @@ const Home: NextPage = () => {
               ]}
               img={
                 {
-                  src: '/img/discing-up-thumbnail.png',
+                  src: '/img/discing-up-thumbnail2.png',
                   alt: 'Urankar Law, LLC',
                   width: 350,
                   height: 400,
@@ -122,7 +122,7 @@ const Home: NextPage = () => {
               }
               imgPosition="left"
             ></PortfolioItem>
-            <div className="wave-divider-footer -z-5">
+            <div className="wave-divider-footer -z-1">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
               </svg>
