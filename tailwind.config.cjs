@@ -22,7 +22,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [
-    require('autoprefixer'),
-  ],
+  plugins: [],
 };
