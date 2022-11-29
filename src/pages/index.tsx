@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Social', anchor: '#social'}, {displayText: 'Resume', anchor: '#resume'} ]}></Navbar>
 
         <div className="container flex flex-col items-center justify-center">
-          <section className="flex flex-col min-h-[70vh] min-w-full bg-cream color-light-blue items-center justify-center relative">
+          <section className="flex flex-col min-h-[58vh] min-w-full bg-cream color-light-blue items-center justify-center relative">
             <div className="curve-divider-navbar">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" className="shape-fill"></path>
@@ -122,6 +122,7 @@ const Home: NextPage = () => {
               }
               imgPosition="left"
             ></PortfolioItem>
+            <div className="h-0 md:h-4"></div>
             <div className="wave-divider-footer -z-5">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="h-6 lg:h-12">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
