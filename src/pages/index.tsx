@@ -2,6 +2,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from 'next/image'
+import Link from 'next/link';
 
 // Custom Components
 import { Navbar } from "../components/Navbar";
@@ -142,12 +143,12 @@ const Home: NextPage = () => {
                     <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center h-[50px] w-[50px]"></Image>
                   </li>
                 </a>
-                <a href='/resume' className="bg-light-blue rounded-full">
+                <Link href='/resume' className="bg-light-blue rounded-full">
                   <li className="flex h-[80px] w-[80px]">
                     <p className="self-center mx-auto font-bold">Resume
                     </p>
                   </li>
-                </a>
+                </Link>
               </ul>
             </div>
             <div className="flex justify-center">
