@@ -53,14 +53,14 @@ const Home: NextPage = () => {
             </div>
           </section>
           
-          <section className="container min-h-[40vh] flex flex-col flex-wrap bg-blue pt-6 pb-12 px-10" id="about">
+          <section className="container min-h-[40vh] flex flex-col flex-wrap bg-blue pt-6 pb-12 px-4 md:px-28" id="about">
             <Bio
               text={['I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.','I have a history of researching and implementing technical solutions to business problems.','You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.',`I am looking for experience that will provide awareness for what I don't know, the structure for high performing software development teams, and the core technical competency to prototype and scale startup ideas.`]}
               skills={['JavaScript','Python','ReactJs','Django','PostgreSQL','Typescript','Tailwind','HTML','CSS','Git','GitHub','Slack']}
             ></Bio>
           </section>
 
-          <section className="container bg-cream px-10 pt-6 pb-12 flex flex-col items-center space-y-4 relative" id="portfolio">
+          <section className="container bg-cream px-4 md:px-28 pt-6 pb-12 flex flex-col items-center space-y-4 relative" id="portfolio">
             <div className="wavy-divider-bio">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
@@ -72,10 +72,10 @@ const Home: NextPage = () => {
               description="Referencing the client&apos;s theme, built and styled the landing page layout and components."
               technologies= {[
                 {src: NextJsLogo, alt: 'Next.js', width: 115, url: 'https://nextjs.org/'}, 
-                {src: ReactLogo, alt: 'React.js', width: 30}, 
-                {src: TypescriptLogo, alt: 'Typescript', width: 30}, 
-                {src: TailwindLogo, alt: 'Tailwind CSS', width: 35}, 
-                {src: VercelLogo, alt: 'Vercel', width: 105}
+                {src: ReactLogo, alt: 'React.js', width: 30, url: 'https://reactjs.org/'}, 
+                {src: TypescriptLogo, alt: 'Typescript', width: 30, url: 'https://www.typescriptlang.org/'}, 
+                {src: TailwindLogo, alt: 'Tailwind CSS', width: 35, url: 'https://tailwindcss.com/'}, 
+                {src: VercelLogo, alt: 'Vercel', width: 105, url: 'https://vercel.com/'}
               ]}
               url="http://urankarlaw.com"
               buttons={[
@@ -123,26 +123,26 @@ const Home: NextPage = () => {
               imgPosition="left"
             ></PortfolioItem>
             <div className="wave-divider-footer -z-5">
-              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="h-6 lg:h-12">
                 <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
               </svg>
             </div>
           </section>
-          <section className="container min-h-[20vh] bg-deep-blue" id="social">
+          <section className="container bg-deep-blue" id="social">
             <div className="footer">
-              <ul className="flex flex-row justify-center items-center min-h-[50px] my-8">
-                <a href='https://www.linkedin.com/in/stephenqhoward/' className="mr-12 flex items-center bg-light-blue rounded-full">
-                  <li className="flex h-[90px] w-[90px] place-self-center">
+              <ul className="flex flex-row justify-center items-center min-h-[50px] my-4 md:my-8">
+                <a href='https://www.linkedin.com/in/stephenqhoward/' className="mr-6 md:mr-12 flex items-center bg-light-blue rounded-full">
+                  <li className="flex h-[80px] w-[80px] place-self-center">
                     <Image alt="LinkedIn" src={ LinkedInLogo } width={45} className="m-auto self-center"></Image>
                   </li>
                 </a>
                 <a href='https://github.com/stephenqhoward' className="bg-light-blue mr-12 rounded-full">
-                  <li className="flex text-center justify-items-center h-[90px] w-[90px]">
+                  <li className="flex text-center justify-items-center h-[80px] w-[80px]">
                     <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center h-[50px] w-[50px]"></Image>
                   </li>
                 </a>
                 <a href='#resume' className="bg-light-blue rounded-full">
-                  <li className="flex h-[90px] w-[90px]">
+                  <li className="flex h-[80px] w-[80px]">
                     <p className="self-center mx-auto font-bold">Resume
                     </p>
                   </li>
