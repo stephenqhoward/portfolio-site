@@ -20,3 +20,4 @@ Curve & Wavy styling curteousy of [Shape Divider App](shapedivider.app). - Note:
 - Add smooth-scroll to Navbar links
 - Consider having Navbar fixed while scrolling
 - Consider To Top button on Footer (with smooth scrolling)
+- Sections: Education, Bootcamp Projects, Co-worker Quotes
