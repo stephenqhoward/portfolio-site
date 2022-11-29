@@ -30,7 +30,7 @@ export type PortfolioItemProps = {
 const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologies, url, buttons, img, imgPosition }) => {
 
   return (
-    <div className="flex sm:flex-col lg:flex-row flex-wrap w-full min-h-[45vh] space-y-6 z-10 border-2 rounded-lg border-blue p-4 pb-6">
+    <div className="flex sm:flex-col lg:flex-row flex-wrap w-full space-y-6 z-10 border-2 rounded-lg border-blue p-4 pb-6">
 
     { img && imgPosition === "left" ? <PortfolioItemImage
       img={ img }
