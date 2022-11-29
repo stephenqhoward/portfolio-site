@@ -2,6 +2,7 @@
 import { type NextPage } from "next";
 import Head from "next/head";
 import Image from 'next/image'
+import Link from 'next/link';
 
 // Custom Components
 import { Navbar } from "../components/Navbar";
@@ -30,7 +31,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col min-h-screen items-center justify-center bg-gradient-to-b from-[#1D3557] to-[#457B9d]">
-        <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Social', anchor: '#social'}, {displayText: 'Resume', anchor: '#resume'} ]}></Navbar>
+        <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Social', anchor: '#social'}, {displayText: 'Resume', anchor: '/resume'} ]}></Navbar>
 
         <div className="container flex flex-col items-center justify-center">
           <section className="flex flex-col min-h-[58vh] min-w-full bg-cream color-light-blue items-center justify-center relative">
@@ -142,12 +143,12 @@ const Home: NextPage = () => {
                     <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center h-[50px] w-[50px]"></Image>
                   </li>
                 </a>
-                <a href='#resume' className="bg-light-blue rounded-full">
+                <Link href='/resume' className="bg-light-blue rounded-full">
                   <li className="flex h-[80px] w-[80px]">
                     <p className="self-center mx-auto font-bold">Resume
                     </p>
                   </li>
-                </a>
+                </Link>
               </ul>
             </div>
             <div className="flex justify-center">
