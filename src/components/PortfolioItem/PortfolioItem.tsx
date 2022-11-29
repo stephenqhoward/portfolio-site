@@ -30,10 +30,10 @@ export type PortfolioItemProps = {
 const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologies, url, buttons, img, imgPosition }) => {
 
   return (
-    <div className="portfolio-item-wrapper">
-      <div className="portfolio-item-transition">
-        <div className={`portfolio-item-cover-${ imgPosition } rounded-lg`}></div>
-        <div className={`flex sm:flex-col lg:flex-row flex-wrap min-h-[35vh] py-6 px-4 border-2 rounded-lg border-blue portfolio-item-content-${ imgPosition } bg-cream`}>          
+    <div className="md:portfolio-item-wrapper w-full md:width-[90%]">
+      <div className="md:portfolio-item-transition lg:relative">
+        <div className={`portfolio-item-cover-${ imgPosition } rounded-lg sm:invisible`}></div>
+        <div className={`flex sm:flex-col lg:flex-row flex-wrap py-6 px-4 border-2 rounded-lg border-blue md:portfolio-item-content-${ imgPosition } h-fit bg-cream w-full`}>          
           { img && imgPosition === "left" ? <PortfolioItemImage
             img={ img }
             url={ url }

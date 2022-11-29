@@ -60,7 +60,7 @@ const Home: NextPage = () => {
             ></Bio>
           </section>
 
-          <section className="container bg-cream px-4 md:px-10 pt-6 pb-20 flex flex-col items-center space-y-4 relative h-fit" id="portfolio">
+          <section className="container bg-cream px-4 md:px-10 pt-6 pb-20 flex flex-col items-center space-y-6 relative w-full" id="portfolio">
             <div className="wavy-divider-bio">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
@@ -86,8 +86,8 @@ const Home: NextPage = () => {
                 {
                   src: '/img/Urankar-Law-Thumbnail.png',
                   alt: 'Urankar Law, LLC',
-                  width: 350,
-                  height: 400,
+                  width: 325,
+                  height: 375,
                 }
               }
               imgPosition="right"

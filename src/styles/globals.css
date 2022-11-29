@@ -115,13 +115,14 @@ h1, h2 {
   fill: #1D3557;
 }
 
-.portfolio-item-wrapper {
-  width: min(90%);
-}
+/* .portfolio-item-wrapper {
+  width: min(1200px, 90%);
+} */
 
 .portfolio-item-transition {
-  position: relative;
-  aspect-ratio: 3.7/1;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4.5/1;
 }
 
 .portfolio-item-cover-left, .portfolio-item-cover-right, .portfolio-item-content-left, .portfolio-item-content-right {
@@ -137,7 +138,7 @@ h1, h2 {
 }
 
 .portfolio-item-cover-right {
-  background-image: url('/img/Urankar-Law-Thumbnail.png');
+  background-image: url('/img/Urankar-Law-Thumbnail-test.png');
 } 
 
 .portfolio-item-content-right {
@@ -153,7 +154,7 @@ h1, h2 {
 }
 
 .portfolio-item-cover-left {
-  background-image: url('/img/discing-up-thumbnail.png');
+  background-image: url('/img/discing-up-thumbnail-test.png');
   background-position: center;
 } 
 
