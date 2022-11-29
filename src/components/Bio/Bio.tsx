@@ -1,5 +1,4 @@
 import { type FC } from "react";
-import Link from 'next/link';
 
 type BioProps = {
   text: string[];
@@ -12,11 +11,11 @@ const Bio: FC<BioProps> = ({ text, skills }) => (
       <h2 className="text-4xl">Stephen Q. Howard</h2>
       {text.map((paragraph, index) => {
         return (
-            <p className="sm:ml-0 md:ml-16" key={ index }>{ paragraph }</p>
+            <p className="" key={ index }>{ paragraph }</p>
         )
       })}
     </div>
-    <div className="sm:ml-0 md:ml-16">
+    <div className="">
       <h2>Skills</h2>
       <ul className="flex flex-row flex-wrap">
         {skills.map((skill, index) => {
