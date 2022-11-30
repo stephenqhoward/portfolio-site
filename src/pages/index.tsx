@@ -1,17 +1,15 @@
 // Next
-import { type NextPage } from "next";
-import Head from "next/head";
-import Image from 'next/image'
-import Link from 'next/link';
+import { type NextPage } from 'next';
+import Head from 'next/head';
 
 // Custom Components
-import { Navbar } from "../components/Navbar";
-import { PortfolioItem } from '../components/PortfolioItem';
+import { Navbar } from '../components/Navbar';
+import { Hero } from '../components/Hero';
 import { Bio } from '../components/Bio';
+import { PortfolioItem } from '../components/PortfolioItem';
+import { Footer } from '../components/Footer';
 
 // Images
-import LinkedInLogo from '../../public/img/linkedin-app-icon.svg';
-import GitHubLogo from '../../public/img/github-icon.svg';
 import NextJsLogo from '../../public/img/nextjs-icon.svg';
 import ReactLogo from '../../public/img/react-js-icon.svg';
 import TypescriptLogo from '../../public/img/typescript-programming-language-icon.svg';
@@ -34,17 +32,14 @@ const Home: NextPage = () => {
         <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Social', anchor: '#social'}, {displayText: 'Resume', anchor: '/resume'} ]}></Navbar>
 
         <div className="container flex flex-col items-center justify-center">
+          
           <section className="flex flex-col min-h-[58vh] min-w-full bg-cream color-light-blue items-center justify-center relative">
             <div className="curve-divider-navbar">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" className="shape-fill"></path>
               </svg>
             </div>
-            <h1 className="text-deep-blue font-bold text-4xl">{`Hi! I'm Stephen.`}</h1>
-            <h2 className="text-2xl text-center">Former Certified Public Accountant (CPA) - Current Full Stack Developer</h2>
-            <p className="text-red">Please excuse the saw dust as I spin this up!</p>
-            <p className="text-deep-blue">Site Version 0.7</p>
-            <p className="text-deep-blue font-thin">Last Updated: 11/28/2022</p>
+            <Hero title={`Hi! I'm Stephen.`} subtitle='Former Certified Public Accountant (CPA) - Current Full Stack Developer'></Hero>
             <div className="wavy-divider-hero">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className="shape-fill"></path>
@@ -108,7 +103,7 @@ const Home: NextPage = () => {
                 {src: VercelLogo, alt: 'Vercel', width: 105, url: 'https://vercel.com/'},
               ]}
               // https://discing-up.vercel.app/
-              url=""
+              url='https://discing-up.vercel.app/'
               buttons={[
                 {url: 'http://urankarlaw.com', type: 'site', text: 'Live Site'}, 
                 {type: 'disabled', text: 'GitHub', subtext:'(Private Repo)'}
@@ -131,29 +126,7 @@ const Home: NextPage = () => {
             </div>
           </section>
           <section className="container bg-deep-blue" id="social">
-            <div className="footer">
-              <ul className="flex flex-row justify-center items-center min-h-[50px] my-4 md:my-8">
-                <a href='https://www.linkedin.com/in/stephenqhoward/' className="mr-6 md:mr-12 flex items-center bg-light-blue rounded-full">
-                  <li className="flex h-[80px] w-[80px] place-self-center">
-                    <Image alt="LinkedIn" src={ LinkedInLogo } width={45} className="m-auto self-center"></Image>
-                  </li>
-                </a>
-                <a href='https://github.com/stephenqhoward' className="bg-light-blue mr-12 rounded-full">
-                  <li className="flex text-center justify-items-center h-[80px] w-[80px]">
-                    <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center h-[50px] w-[50px]"></Image>
-                  </li>
-                </a>
-                <Link href='/resume' className="bg-light-blue rounded-full">
-                  <li className="flex h-[80px] w-[80px]">
-                    <p className="self-center mx-auto font-bold">Resume
-                    </p>
-                  </li>
-                </Link>
-              </ul>
-            </div>
-            <div className="flex justify-center">
-              <p className="text-color-cream font-thin">&copy; 2022 - Stephen Howard</p>
-            </div>
+            <Footer title='' subtitle=''></Footer>
           </section>
 
         </div>
