@@ -46,7 +46,7 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
           return (
             <a href={ img.url } key={ index } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] sm:ml-6 sm:mr-0 md:ml-0 md:mr-4 sm:mb-6 md:mb-0 underline decoration-4`}>
               <li className='mr-4 mb-4'>
-                <Image src={ img.src } alt={ img.alt } width={ img.width } className=''>
+                <Image src={ img.src } alt={ img.alt } height={ img.height } width={ img.width } className=''>
                 </Image>
               </li>
             </a>
