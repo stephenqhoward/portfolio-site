@@ -126,7 +126,7 @@ const Home: NextPage = () => {
             </div>
           </section>
           <section className="container bg-deep-blue" id="social">
-            <Footer title='' subtitle=''></Footer>
+            <Footer></Footer>
           </section>
 
         </div>
