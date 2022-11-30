@@ -15,40 +15,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Footer - LinkedIn Logo inner-fill */
-.linkedin-logo {
-  color: #A8DADC;
-}
-
-li:hover .linkedin-logo .inner {
-  color: #E63946;
-}
-
-.linkedin-logo .outer {
-  fill: #F1FAEE;
-}
-
-.linkedin-logo .inner {
-  fill: currentColor;
-}
-
-.linkedin-logo .outer, .linkedin-logo .inner {
-  fill-rule: evenodd;
-}
-
-h3, p, li {
-  color: #F1FAEE;
-}
-
-h1, h2 {
-  color: #A8DADC;
-  font-weight: bold;
-}
-
-.footer ul a:hover,
-.footer ul a:focus {
-  background-color: #E63946;
-}
 /* Curve Navbar */
 .curve-divider-navbar {
   position: absolute;
@@ -133,4 +99,39 @@ h1, h2 {
 
 .wave-divider-footer .shape-fill {
   fill: #1D3557;
+}
+
+/* Footer - LinkedIn Logo inner-fill */
+.linkedin-logo {
+  color: #A8DADC;
+}
+
+li:hover .linkedin-logo .inner {
+  color: #E63946;
+}
+
+.linkedin-logo .outer {
+  fill: #F1FAEE;
+}
+
+.linkedin-logo .inner {
+  fill: currentColor;
+}
+
+.linkedin-logo .outer, .linkedin-logo .inner {
+  fill-rule: evenodd;
+}
+
+h3, p, li {
+  color: #F1FAEE;
+}
+
+h1, h2 {
+  color: #A8DADC;
+  font-weight: bold;
+}
+
+.footer ul a:hover,
+.footer ul a:focus {
+  background-color: #E63946;
 }

@@ -40,8 +40,8 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
     }
 
     <div className="sm:w-[100%] lg:w-[60%] flex flex-col space-y-6 self-center">
-      <h3 className="text-deep-blue text-2xl font-bold">{ title }</h3>
-      <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 underline decoration-4">
+      <h3 className="text-deep-blue text-2xl font-bold text-center md:text-left">{ title }</h3>
+      <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 underline decoration-4 justify-center md:justify-start">
         {technologies.map((img, index) => {
           return (
             <a href={ img.url } key={ index } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] sm:ml-6 sm:mr-0 md:ml-0 md:mr-4 sm:mb-6 md:mb-0 underline decoration-4`}>
@@ -54,7 +54,7 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
         })}
       </ul>
       <p className="text-deep-blue">{ description }</p>
-      <div className="flex flex-row space-x-8">
+      <div className="flex flex-row space-x-11 md:flex-start md:space-x-8">
         {/* Buttons */}
         {buttons.map((button) => {
           if (button.type === 'disabled') {
