@@ -19,5 +19,7 @@ Curve & Wavy styling curteousy of [Shape Divider App](shapedivider.app). - Note:
 - Add in-browser viewer of pdf resume
 - Add smooth-scroll to Navbar links
 - Consider having Navbar fixed while scrolling
+- Consider collapsible Navbar on mobile
 - Consider To Top button on Footer (with smooth scrolling)
 - Sections: Education, Bootcamp Projects, Co-worker Quotes
+- Consider Portfolio Item cover photos with accordion content
