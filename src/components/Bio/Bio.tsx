@@ -8,10 +8,10 @@ type BioProps = {
 const Bio: FC<BioProps> = ({ text, skills }) => (
   <>
     <div className="pb-4 space-y-3 sm:w-full md:w-[60%]">
-      <h2 className="text-4xl">Stephen Q. Howard</h2>
+      <h2 className="text-4xl text-center md:text-left">Stephen Q. Howard</h2>
       {text.map((paragraph, index) => {
         return (
-            <p className="" key={ index }>{ paragraph }</p>
+            <p className="text-justify md:text-left" key={ index }>{ paragraph }</p>
         )
       })}
     </div>
