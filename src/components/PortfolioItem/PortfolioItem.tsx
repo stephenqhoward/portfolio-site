@@ -44,7 +44,7 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
       <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 underline decoration-4 justify-center md:justify-start">
         {technologies.map((img, index) => {
           return (
-            <a href={ img.url } key={ index } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] sm:ml-6 sm:mr-0 lg:ml-0 lg:mr-4 sm:mb-6 lg:mb-0`}>
+            <a href={ img.url } key={ index } target="_blank" rel="noreferrer" className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] sm:ml-6 sm:mr-0 lg:ml-0 lg:mr-4 sm:mb-6 lg:mb-0`}>
               <li className='mr-4 mb-4'>
                 <Image src={ img.src } alt={ img.alt } height={ img.height } width={ img.width } className=''>
                 </Image>
