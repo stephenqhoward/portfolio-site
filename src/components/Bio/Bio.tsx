@@ -21,7 +21,7 @@ const Bio: FC<BioProps> = ({ text, skills }) => (
         {skills.map((skill, index) => {
           while(index !== skills.length-1) {
             return (
-              <li key={ index }>{ skill } &#x2022;&#x3;</li>
+              <li key={ index }>{ skill } •&nbsp;</li>
             )
           }
           return (
