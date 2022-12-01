@@ -9,7 +9,7 @@ const Footer: FC<unknown> = () => (
   <>
     <div className="footer">
       <ul className="flex flex-row justify-center items-center my-4 md:my-8 space-x-8">
-        <a href='https://www.linkedin.com/in/stephenqhoward/' className="flex items-center bg-light-blue rounded-full">
+        <a href='https://www.linkedin.com/in/stephenqhoward/' target="_blank" rel="noreferrer" className="flex items-center bg-light-blue rounded-full">
           <li className="flex h-20 w-20 place-self-center">
             <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.31" className="linkedin-logo h-12 w-12 mx-auto self-center">
               <path className="outer" d="M27.75,0H95.13a27.83,27.83,0,0,1,27.75,27.75V94.57a27.83,27.83,0,0,1-27.75,27.74H27.75A27.83,27.83,0,0,1,0,94.57V27.75A27.83,27.83,0,0,1,27.75,0Z" />
@@ -17,7 +17,7 @@ const Footer: FC<unknown> = () => (
             </svg>
           </li>
         </a>
-        <a href='https://github.com/stephenqhoward' className="bg-light-blue rounded-full">
+        <a href='https://github.com/stephenqhoward' target="_blank" rel="noreferrer" className="bg-light-blue rounded-full">
           <li className="flex text-center justify-items-center h-20 w-20">
             <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center h-12 w-12"></Image>
           </li>
