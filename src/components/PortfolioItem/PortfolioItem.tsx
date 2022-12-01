@@ -30,7 +30,7 @@ export type PortfolioItemProps = {
 const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologies, url, buttons, img, imgPosition }) => {
 
   return (
-    <div className="flex sm:flex-col lg:flex-row flex-wrap w-full space-y-6 z-10 border-2 rounded-lg border-blue p-4 pb-6">
+    <div className="flex sm:flex-col lg:flex-row flex-wrap w-full space-y-4 z-10 border-2 rounded-lg border-blue p-4 pb-6">
 
     { img && imgPosition === "left" ? <PortfolioItemImage
       img={ img }
@@ -54,7 +54,7 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
         })}
       </ul>
         <p className="text-deep-blue text-justify md:text-center lg:text-left sm:w-full md:w-[60%] lg:w-full self-center lg:self-start">{ description }</p>
-      <div className="flex flex-row justify-center lg:justify-start lg:space-x-8 portfolio-item-buttons">
+      <div className="flex flex-row justify-center lg:justify-start md:space-x-12 portfolio-item-buttons md:w-[50%] md:self-center lg:self-start">
         {/* Buttons */}
         {buttons.map((button) => {
           if (button.type === 'disabled') {
