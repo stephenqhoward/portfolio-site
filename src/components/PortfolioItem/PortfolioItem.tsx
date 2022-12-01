@@ -66,7 +66,7 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
             )
           } else if (button.type === 'live') {
             return (
-              <a href={ button.url } className="bg-red w-32 rounded-xl h-16 text-lg font-bold" target="_blank" rel="noreferrer" key={ button.type }>
+              <a href={ button.url } className="bg-red hover:bg-light-red w-32 rounded-xl h-16 text-lg font-bold" target="_blank" rel="noreferrer" key={ button.type }>
                 <button className="w-32 h-16 text-cream">{ button.text }</button>
               </a>
             )
