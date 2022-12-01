@@ -101,6 +101,10 @@ body {
   fill: #1D3557;
 }
 
+.portfolio-item-buttons {
+  justify-content: space-between;
+}
+
 /* Footer - LinkedIn Logo inner-fill */
 .linkedin-logo {
   color: #A8DADC;
