@@ -11,7 +11,7 @@ const Hero: FC<HeroProps> = ({ title, subtitle }) => (
       <h2 className="text-2xl text-center">{ subtitle }</h2>
         <p className="text-red">Please excuse the saw dust as I spin this up!</p>
         <p className="text-deep-blue">Site Version 0.7.5</p>
-        <p className="text-deep-blue font-thin">Last Updated: 11/30/2022</p>
+        <p className="text-deep-blue font-thin">Last Updated: 12/1/2022</p>
   </>
 );
 
