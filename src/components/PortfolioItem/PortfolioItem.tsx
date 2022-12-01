@@ -40,12 +40,12 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
     }
 
     <div className="sm:w-[100%] lg:w-[60%] flex flex-col space-y-6 self-center">
-      <h3 className="text-deep-blue text-2xl font-bold text-center md:text-left">{ title }</h3>
-      <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 underline decoration-4 justify-center md:justify-start">
+      <h3 className="text-deep-blue text-2xl font-bold text-center lg:text-left">{ title }</h3>
+      <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 justify-center lg:justify-start">
         {technologies.map((img, index) => {
           return (
-            <a href={ img.url } key={ index } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] sm:ml-6 sm:mr-0 md:ml-0 md:mr-4 sm:mb-6 md:mb-0 underline decoration-4`}>
-              <li className='mr-4 mb-4'>
+            <a href={ img.url } key={ index } target="_blank" rel="noreferrer" className={`max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] mx-auto lg:ml-0 lg:mr-4 my-auto`}>
+              <li className=''>
                 <Image src={ img.src } alt={ img.alt } height={ img.height } width={ img.width } className=''>
                 </Image>
               </li>
@@ -54,7 +54,7 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
         })}
       </ul>
       <p className="text-deep-blue">{ description }</p>
-      <div className="flex flex-row space-x-11 md:flex-start md:space-x-8">
+      <div className="flex flex-row space-x-11 justify-center lg:justify-start lg:space-x-8">
         {/* Buttons */}
         {buttons.map((button) => {
           if (button.type === 'disabled') {
@@ -66,14 +66,14 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
             )
           } else if (button.type === 'live') {
             return (
-              <a href={ button.url } className="bg-red w-32 rounded-xl h-16 text-lg font-bold" target="_blank" rel="noreferrer" key={ button.type }>
+              <a href={ button.url } className="bg-red hover:bg-light-red w-32 rounded-xl h-16 text-lg font-bold" target="_blank" rel="noreferrer" key={ button.type }>
                 <button className="w-32 h-16 text-cream">{ button.text }</button>
               </a>
             )
           } else {
             return (
-              <div className="w-32 h-16 bg-light-blue rounded-xl text-cream flex justify-center items-center" key={ button.type }>
-                <p className="text-lg font-bold text-center">Coming Soon!</p>
+              <div className="w-32 h-16 bg-light-blue rounded-xl flex justify-center items-center" key={ button.type }>
+                <p className="text-lg font-bold text-center text-deep-blue">Coming Soon!</p>
               </div>
             )
           }

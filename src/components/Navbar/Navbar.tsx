@@ -14,7 +14,7 @@ type NavbarProps = {
 };
 
 const Navbar: FC<NavbarProps> = ({ logo, subTitle, links }) => (
-  <div className="container color-white flex flex-row max-h-10 bg-deep-blue items-center">
+  <div className="w-full lg:container color-white flex flex-row max-h-10 bg-deep-blue items-center">
     <div className="justify-self-start flex flex-row flex-grow flex-wrap h-12 items-center pl-3">
       <h2 className="pr-2 text-light-blue">{ logo }</h2>
       <h3 className="hidden md:flex">{ subTitle }</h3>

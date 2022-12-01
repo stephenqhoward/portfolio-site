@@ -17,11 +17,11 @@ export type imgs = {
 const PortfolioItemImage: FC<portfolioitemimage> = ({ img, url, position }) => {
   let image = <></>
   let imgClassNames = "lg:drop-shadow-[8px_8px_8px_rgba(0,0,0,0.5)] lg:skew-y-3 rounded-md"
-  let divClassNames = "sm:w-[100%] lg:w-[40%] flex items-center sm:justify-center lg:justify-end min-h-fit"
+  let divClassNames = "sm:w-[100%] lg:w-[40%] flex items-center sm:justify-center lg:justify-end pr-4"
   
   if (position === "left") {
     imgClassNames = "lg:drop-shadow-[-8px_8px_8px_rgba(0,0,0,0.5)] lg:-skew-y-3 rounded-md"
-    divClassNames = "sm:w-[100%] lg:w-[40%] flex items-center sm:justify-center lg:justify-start min-h-fit"
+    divClassNames = "sm:w-[100%] lg:w-[40%] flex items-center sm:justify-center lg:justify-start pl-4"
   }
 
   if (img) {
