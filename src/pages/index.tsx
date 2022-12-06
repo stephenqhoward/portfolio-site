@@ -153,6 +153,13 @@ const Home: NextPage = () => {
               ]} 
             >
             </EducationItem>
+            <EducationItem 
+              institution="Bowling Green State University"
+              description="Bachelor of Science in Business Administration (concentration: accounting)"
+              honors="cum laude"
+              url="https://www.bgsu.edu/"
+            >
+            </EducationItem>
             <div className="h-0 md:h-4"></div>
             <div className="wave-divider-footer -z-5">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="h-6 lg:h-12">
