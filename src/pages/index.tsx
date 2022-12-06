@@ -40,27 +40,27 @@ const Home: NextPage = () => {
         <meta name="description" content="Portfolio site of Stephen Q. Howard" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col min-h-screen items-center justify-center bg-gradient-to-b from-[#1D3557] to-[#457B9d]">
+      <main className="bg-gradient-to-b from-[#1D3557] to-[#457B9d] flex flex-col items-center justify-center min-h-screen">
         <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Education', anchor: '#education'}, {displayText: 'Resume', anchor: '/resume'} ]}></Navbar>
 
-        <div className="w-full lg:container flex flex-col items-center justify-center">
+        <div className="lg:container flex flex-col items-center justify-center w-full">
           
-          <section className="flex flex-col min-h-[58vh] min-w-full bg-cream color-light-blue items-center justify-center relative">
+          <section className="bg-cream color-light-blue flex flex-col items-center justify-center min-h-[58vh] min-w-full relative">
             <DividerNavbar></DividerNavbar>
             <Hero title={`Hi! I'm Stephen.`} subtitle='Full Stack Developer'></Hero>
             <DividerHero></DividerHero>
           </section>
           
-          <section className="min-h-[40vh] flex flex-col flex-wrap bg-blue pt-6 pb-12 px-4 md:px-28" id="about">
+          <section className="bg-blue flex flex-col flex-wrap min-h-[40vh] pt-6 pb-12 px-4 md:px-28" id="about">
             <Bio
               text={['I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.','I have a history of researching and implementing technical solutions to business problems.','You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.',`I am looking for experience that will provide awareness for what I don't know, the structure for high performing software development teams, and the core technical competency to prototype and scale startup ideas.`]}
               skills={['JavaScript','Python','ReactJs','Django','PostgreSQL','Typescript','Tailwind','HTML','CSS','Git','GitHub','Slack']}
             ></Bio>
           </section>
 
-          <section className="bg-cream px-4 md:px-28 pt-6 pb-12 flex flex-col items-center space-y-4 relative w-full" id="portfolio">
+          <section className="bg-cream flex flex-col items-center pb-12 pt-6 px-4 md:px-28 relative space-y-4 w-full" id="portfolio">
             <DividerBio></DividerBio>
-            <h2 className="text-4xl md:self-start">PORTFOLIO</h2>
+            <h2 className="md:self-start text-4xl">PORTFOLIO</h2>
             <PortfolioItem 
               title="Urankar Law, LLC - Landing Page"
               description={`Referencing the client's theme, built and styled the landing page layout and components.`}
@@ -117,9 +117,9 @@ const Home: NextPage = () => {
             ></PortfolioItem>
             <DividerEducation></DividerEducation>
           </section>
-          
-          <section className="bg-blue px-4 md:px-28 pt-6 pb-12 flex flex-col items-center space-y-4 relative w-full" id="education">
-            <h2 className="text-4xl md:self-start">Education</h2>
+
+          <section className="bg-blue flex flex-col items-center pb-12 pt-6 px-4 md:px-28 relative space-y-4 w-full" id="education">
+            <h2 className="md:self-start text-4xl">Education</h2>
             <EducationItem 
               institution="Code Platoon"
               description="28-Week Online Full Stack Development Bootcamp"
@@ -152,7 +152,7 @@ const Home: NextPage = () => {
             <DividerFooter></DividerFooter>
           </section>
 
-          <section className="w-full bg-deep-blue" id="social">
+          <section className="bg-deep-blue w-full" id="social">
             <Footer></Footer>
           </section>
 

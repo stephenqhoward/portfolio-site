@@ -25,17 +25,17 @@ export type EducationItemProps = {
 const EducationItem: FC<PropsWithChildren<EducationItemProps>> = ({ institution, description, honors, technologies, url, projectTitle, projectDescription, integratedApis }) => {
 
   return (
-    <div className="flex flex-col flex-wrap w-full space-y-6 z-10 lg:border-2 border-light-blue rounded-lg lg:p-4 lg:pl-0 pb-6 text-cream">
-      <div className="w-full flex flex-col space-y-2 pl-0 lg:pl-4">
+    <div className="lg:border-2 border-light-blue rounded-lg flex flex-col flex-wrap pb-6 lg:p-4 lg:pl-0 space-y-6 text-cream w-full z-10">
+      <div className="flex flex-col pl-0 lg:pl-4 space-y-2 w-full">
         <a href={ url } target="_blank" rel="noreferrer">
-          <h3 className="text-2xl font-bold text-deep-blue">{ institution }</h3>
+          <h3 className="font-bold text-2xl text-deep-blue">{ institution }</h3>
         </a>
         <p className="">{ description }</p>
         { honors ? <p>Honors: { honors }</p> : <></>}
         { technologies ? (
           <>
             <p className="underline">Tech Stack</p>
-            <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 justify-center technologies-item-buttons self-center lg:self-start w-[75%] lg:w-[33%]">
+            <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center self-center sm:space-y-4 md:space-y-0 technologies-item-buttons lg:self-start w-[75%] lg:w-[33%]">
               {technologies?.map((img) => {
                 return (
                   <a href={ img.url } key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>
@@ -53,18 +53,18 @@ const EducationItem: FC<PropsWithChildren<EducationItemProps>> = ({ institution,
       </div>
       { projectTitle ? (
         <div className="pl-0 lg:pl-4 w-full lg:w-[65%]">
-        <h4 className="text-xl font-bold italic text-deep-blue">{ projectTitle }</h4>
+        <h4 className="font-bold italic text-deep-blue text-xl">{ projectTitle }</h4>
           <ul>
             {projectDescription?.map((bullet, index) => {
               return (                
-                <li key={ index } className='mx-auto lg:mr-4 mb-4'>
+                <li key={ index } className='mb-4 mx-auto lg:mr-4'>
                   <p className="text-justify lg:text-left">{ bullet }</p>
                 </li>
               )
             })}
           </ul>
-          <p className="underline pb-4">External APIs Integrated</p>
-          <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 self-center lg:self-start justify-center technologies-item-buttons">
+          <p className="pb-4 underline">External APIs Integrated</p>
+          <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center self-center lg:self-start sm:space-y-4 md:space-y-0 technologies-item-buttons">
             {integratedApis?.map((img) => {
               return (
                 <a href={ img.url } key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>

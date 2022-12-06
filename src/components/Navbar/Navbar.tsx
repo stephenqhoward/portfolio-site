@@ -14,16 +14,16 @@ type NavbarProps = {
 };
 
 const Navbar: FC<NavbarProps> = ({ logo, subTitle, links }) => (
-  <div className="w-full lg:container color-white flex flex-row max-h-10 bg-deep-blue items-center">
-    <div className="justify-self-start flex flex-row flex-grow flex-wrap h-12 items-center pl-3">
+  <div className=" bg-deep-blue lg:container flex flex-row items-center max-h-10 w-full">
+    <div className="flex flex-row flex-grow flex-wrap h-12 items-center justify-self-start pl-3">
       <h2 className="pr-2 text-light-blue">{ logo }</h2>
       <h3 className="hidden md:flex">{ subTitle }</h3>
     </div>
-    <div className="justify-self-end items-center">
-      <ul className="flex flex-row items-center h-full">
+    <div className="items-center justify-self-end">
+      <ul className="flex flex-row h-full items-center">
         {links.map((link) => {
           return (
-            <Link key={ link.displayText } href={ link.anchor } className="px-2 lg:px-6 self-center h-full hover:bg-light-blue rounded-full"><li>{ link.displayText }</li></Link>
+            <Link key={ link.displayText } href={ link.anchor } className="hover:bg-light-blue h-full px-2 lg:px-6 rounded-full self-center"><li>{ link.displayText }</li></Link>
           )
         })}
       </ul>
