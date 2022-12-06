@@ -15,7 +15,16 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Curve Navbar */
+h1, h2 {
+  color: #A8DADC;
+  font-weight: bold;
+}
+
+h3, p, li {
+  color: #F1FAEE;
+}
+
+/* Curve Divider Navbar */
 .curve-divider-navbar {
   position: absolute;
   top: 0;
@@ -36,7 +45,7 @@ body {
   fill: #1D3557;
 }
 
-/* Wavy Hero */
+/* Wavy Divider Hero */
 .wavy-divider-hero {
   position: absolute;
   bottom: 0;
@@ -58,7 +67,7 @@ body {
   fill: #457B9D;
 }
 
-/* Wavy Bio */
+/* Wavy Divider Bio */
 .wavy-divider-bio {
   position: absolute;
   top: 0;
@@ -80,7 +89,7 @@ body {
   fill: #457B9D;
 }
 
-/* Wavy Education */
+/* Wavy Divider Education */
 .wavy-divider-education {
   position: absolute;
   bottom: 0;
@@ -102,7 +111,7 @@ body {
 }
 
 
-/* Wavy Footer */
+/* Wavy Divider Footer */
 .wave-divider-footer {
   position: absolute;
   bottom: 0;
@@ -146,15 +155,6 @@ li:hover .linkedin-logo .inner {
 
 .linkedin-logo .outer, .linkedin-logo .inner {
   fill-rule: evenodd;
-}
-
-h3, p, li {
-  color: #F1FAEE;
-}
-
-h1, h2 {
-  color: #A8DADC;
-  font-weight: bold;
 }
 
 .footer ul a:hover,
