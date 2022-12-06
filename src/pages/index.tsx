@@ -7,6 +7,7 @@ import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { Bio } from '../components/Bio';
 import { PortfolioItem } from '../components/PortfolioItem';
+import { EducationItem } from '../components/EducationItem';
 import { Footer } from '../components/Footer';
 
 // Images
@@ -19,6 +20,12 @@ import TrpcLogo from '../../public/img/trpc-seeklogo.com.svg';
 import PrismaLogo from '../../public/img/prisma-2.svg';
 import PostgresqlLogo from '../../public/img/postgresql-icon.svg';
 import ZodLogo from '../../public/img/zod-icon.png';
+import Auth0Logo from '../../public/img/auth0-icon.svg';
+import DjangoLogo from '../../public/img/django-icon.svg';
+import GoogleCalendarLogo from '../../public/img/Google_Calendar_icon.svg';
+import FirebaseLogo from '../../public/img/firebase-icon.svg';
+import TwilioLogo from '../../public/img/Twilio-logo.svg';
+
 
 const Home: NextPage = () => {
   return (
@@ -29,7 +36,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col min-h-screen items-center justify-center bg-gradient-to-b from-[#1D3557] to-[#457B9d]">
-        <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Social', anchor: '#social'}, {displayText: 'Resume', anchor: '/resume'} ]}></Navbar>
+        <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Education', anchor: '#education'}, {displayText: 'Resume', anchor: '/resume'} ]}></Navbar>
 
         <div className="w-full lg:container flex flex-col items-center justify-center">
           
@@ -117,6 +124,35 @@ const Home: NextPage = () => {
               }
               imgPosition="left"
             ></PortfolioItem>
+            <div className="wavy-divider-education">
+              <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                  <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
+              </svg>
+            </div>
+          </section>
+          <section className="bg-blue px-4 md:px-28 pt-6 pb-12 flex flex-col items-center space-y-4 relative w-full" id="education">
+            <h2 className="text-4xl md:self-start">Education</h2>
+            <EducationItem 
+              institution="Code Platoon"
+              description="28-Week Online Full Stack Development Bootcamp"
+              technologies={[
+                {src: ReactLogo, alt: 'React.js', width: 40, url: 'https://reactjs.org/'},
+                {src: DjangoLogo, alt: 'Django', width: 30, url: 'https://www.djangoproject.com/'},
+                {src: PostgresqlLogo, alt: 'PostgreSQL', width: 40, url:'https://www.postgresql.org/'},
+              ]} 
+              url="https://www.codeplatoon.org/"
+              projectTitle="Group Project: Ahead of the Game (AotG)"
+              projectDescription={[
+                "A service that allows users to integrate their favorite teams' schedule into Google Calendar and subscribe to event-start text notifications.", 
+                "Personal Contribution: Google Calendar integration • CI/CD to Heroku using GitHub Actions • dependency managemet • database design • Mural & Trello board management"]}
+              integratedApis={[
+                {src: Auth0Logo, alt: 'Auth0', width: 40, url: 'https://auth0.com/'},
+                {src: GoogleCalendarLogo, alt: 'Google Calendar', width: 40, url: 'https://calendar.google.com/'},
+                {src: FirebaseLogo, alt: 'Firebase', width: 40, url: 'https://firebase.google.com/'},
+                {src: TwilioLogo, alt: 'Twilio', width: 115, url: 'https://www.twilio.com/'},
+              ]} 
+            >
+            </EducationItem>
             <div className="h-0 md:h-4"></div>
             <div className="wave-divider-footer -z-5">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" className="h-6 lg:h-12">
