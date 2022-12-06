@@ -1,11 +1,9 @@
-import { type FC } from "react";
-
 type HeroProps = {
   title: string;
   subtitle: string;
 };
 
-const Hero: FC<HeroProps> = ({ title, subtitle }) => (
+const Hero = ({ title, subtitle }: HeroProps) => (
   <div className="my-14 text-center">
     <h1 className="font-bold text-4xl text-deep-blue">{ title }</h1>
       <h2 className="text-2xl text-center">{ subtitle }</h2>

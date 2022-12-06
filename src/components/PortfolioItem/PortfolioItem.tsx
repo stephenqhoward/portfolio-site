@@ -1,4 +1,3 @@
-import { type FC } from "react";
 import Image from 'next/image';
 import { PortfolioItemImage } from './PortfolioItemImage';
 
@@ -27,7 +26,7 @@ export type PortfolioItemProps = {
   imgPosition?: string;
 };
 
-const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologies, url, buttons, img, imgPosition }) => {
+const PortfolioItem = ({ title, description, technologies, url, buttons, img, imgPosition }: PortfolioItemProps) => {
 
   return (
     <div className="border-2 border-blue flex sm:flex-col lg:flex-row flex-wrap p-4 pb-6 rounded-lg space-y-4 w-full z-10">

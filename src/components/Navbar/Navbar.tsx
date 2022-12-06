@@ -1,6 +1,4 @@
-import { type FC } from "react";
 import Link from 'next/link';
-// import heroStyles from "./Hero.module.css";
 
 type link = {
   displayText: string;
@@ -13,7 +11,7 @@ type NavbarProps = {
   links: link[];
 };
 
-const Navbar: FC<NavbarProps> = ({ logo, subTitle, links }) => (
+const Navbar = ({ logo, subTitle, links }: NavbarProps) => (
   <div className=" bg-deep-blue lg:container flex flex-row items-center max-h-10 w-full">
     <div className="flex flex-row flex-grow flex-wrap h-12 items-center justify-self-start pl-3">
       <h2 className="pr-2 text-light-blue">{ logo }</h2>

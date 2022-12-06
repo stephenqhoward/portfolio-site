@@ -1,15 +1,5 @@
-import { type FC } from 'react';
-import { type PropsWithChildren } from 'react';
-
 import Image from 'next/image';
-
-export type imgs = {
-  src: string;
-  alt: string;
-  width: number;
-  height?: number;
-  url?: string;
-};
+import { type imgs } from '../PortfolioItem/PortfolioItem';
 
 export type EducationItemProps = {
   institution: string;
@@ -22,7 +12,7 @@ export type EducationItemProps = {
   integratedApis?: Array<imgs>;
 };
 
-const EducationItem: FC<PropsWithChildren<EducationItemProps>> = ({ institution, description, honors, technologies, url, projectTitle, projectDescription, integratedApis }) => {
+const EducationItem = ({ institution, description, honors, technologies, url, projectTitle, projectDescription, integratedApis }: EducationItemProps) => {
 
   return (
     <div className="lg:border-2 border-light-blue rounded-lg flex flex-col flex-wrap pb-6 lg:p-4 lg:pl-0 space-y-6 text-cream w-full z-10">
