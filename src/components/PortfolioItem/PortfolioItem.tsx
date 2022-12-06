@@ -54,7 +54,7 @@ const PortfolioItem: FC<PortfolioItemProps> = ({ title, description, technologie
         })}
       </ul>
         <p className="text-deep-blue text-justify md:text-center lg:text-left sm:w-full md:w-[60%] lg:w-full self-center lg:self-start">{ description }</p>
-      <div className="flex flex-row justify-center lg:justify-start md:space-x-12 portfolio-item-buttons md:w-[50%] md:self-center lg:self-start">
+      <div className="flex flex-row justify-center lg:justify-start md:space-x-12 technologies-item-buttons md:w-[50%] md:self-center lg:self-start">
         {/* Buttons */}
         {buttons.map((button) => {
           if (button.type === 'disabled') {
