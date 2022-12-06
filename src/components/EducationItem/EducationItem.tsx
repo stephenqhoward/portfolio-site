@@ -32,45 +32,53 @@ const EducationItem: FC<PropsWithChildren<EducationItemProps>> = ({ institution,
         </a>
         <p className="">{ description }</p>
         { honors ? <p>Honors: { honors }</p> : <></>}
-        { technologies ? <p className="underline">Tech Stack</p> : <></>}
-        <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 justify-center portfolio-item-buttons self-center w-[70%] lg:w-[33%]">
-          {technologies?.map((img) => {
-            return (
-              <a href={ img.url } key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>
-                <li className=''>
-                  <Image src={ img.src } alt={ img.alt } width={ img.width } className=''>
-                  </Image>
-                </li>
-              </a>
-            )
-          })}
-        </ul>
+        { technologies ? (
+          <>
+            <p className="underline">Tech Stack</p>
+            <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 justify-center technologies-item-buttons self-center lg:self-start w-[75%] lg:w-[33%]">
+              {technologies?.map((img) => {
+                return (
+                  <a href={ img.url } key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>
+                    <li className=''>
+                      <Image src={ img.src } alt={ img.alt } width={ img.width } className=''>
+                      </Image>
+                    </li>
+                  </a>
+                )
+              })}
+            </ul>
+          </>) 
+          : <></>
+        }
       </div>
-      <div className="pl-0 lg:pl-4 w-full lg:w-[70%]">
-      <h4 className="text-xl font-bold italic text-deep-blue">{ projectTitle }</h4>
-        <ul>
-          {projectDescription?.map((bullet, index) => {
-            return (                
-              <li key={ index } className='mr-4 mb-4'>
-                <p className="text-justify lg:text-left">{ bullet }</p>
-              </li>
-            )
-          })}
-        </ul>
-        { integratedApis ? <p className="underline pb-4">External APIs Integrated</p> : <></> }
-        <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 self-center lg:self-start justify-center portfolio-item-buttons">
-          {integratedApis?.map((img) => {
-            return (
-              <a href={ img.url } key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>
-                <li className=''>
-                  <Image src={ img.src } alt={ img.alt } width={ img.width } className=''>
-                  </Image>
+      { projectTitle ? (
+        <div className="pl-0 lg:pl-4 w-full lg:w-[65%]">
+        <h4 className="text-xl font-bold italic text-deep-blue">{ projectTitle }</h4>
+          <ul>
+            {projectDescription?.map((bullet, index) => {
+              return (                
+                <li key={ index } className='mx-auto lg:mr-4 mb-4'>
+                  <p className="text-justify lg:text-left">{ bullet }</p>
                 </li>
-              </a>
-            )
-          })}
-        </ul>
-      </div>
+              )
+            })}
+          </ul>
+          <p className="underline pb-4">External APIs Integrated</p>
+          <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center sm:space-y-4 md:space-y-0 self-center lg:self-start justify-center technologies-item-buttons">
+            {integratedApis?.map((img) => {
+              return (
+                <a href={ img.url } key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>
+                  <li className=''>
+                    <Image src={ img.src } alt={ img.alt } width={ img.width } className=''>
+                    </Image>
+                  </li>
+                </a>
+              )
+            })}
+          </ul>
+        </div>) 
+        : <></> 
+      }
     </div>
   )
 };
