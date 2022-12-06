@@ -80,6 +80,28 @@ body {
   fill: #457B9D;
 }
 
+/* Wavy Education */
+.wavy-divider-education {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wavy-divider-education svg {
+  position: relative;
+  display: block;
+  width: calc(124% + 1.3px);
+  height: 39px;
+}
+
+.wavy-divider-education .shape-fill {
+  fill: #457B9D;
+}
+
+
 /* Wavy Footer */
 .wave-divider-footer {
   position: absolute;
@@ -101,8 +123,8 @@ body {
   fill: #1D3557;
 }
 
-.portfolio-item-buttons {
-  justify-content: space-between;
+.technologies-item-buttons {
+  justify-content: space-around;
 }
 
 /* Footer - LinkedIn Logo inner-fill */
