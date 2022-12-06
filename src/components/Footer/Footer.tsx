@@ -1,9 +1,8 @@
-import { type FC } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import GitHubLogo from '../../../public/img/github-icon.svg';
 
-const Footer: FC = () => (
+const Footer = () => (
   <>
     <div className="footer">
       <ul className="flex flex-row items-center justify-center my-4 md:my-8 space-x-8">

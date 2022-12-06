@@ -1,17 +1,8 @@
-import { type FC } from 'react';
-import { type PropsWithChildren } from 'react';
-
 import Image from 'next/image';
-
-export type imgs = {
-  src: string;
-  alt: string;
-  width: number;
-  height?: number;
-  url?: string;
-};
+import { type imgs } from '../PortfolioItem/PortfolioItem';
 
 export type EducationItemProps = {
+  children: React.ReactNode;
   institution: string;
   description: string;
   technologies?: Array<imgs>;
@@ -22,7 +13,7 @@ export type EducationItemProps = {
   integratedApis?: Array<imgs>;
 };
 
-const EducationItem: FC<PropsWithChildren<EducationItemProps>> = ({ institution, description, honors, technologies, url, projectTitle, projectDescription, integratedApis }) => {
+const EducationItem = ({ institution, description, honors, technologies, url, projectTitle, projectDescription, integratedApis }: EducationItemProps) => {
 
   return (
     <div className="lg:border-2 border-light-blue rounded-lg flex flex-col flex-wrap pb-6 lg:p-4 lg:pl-0 space-y-6 text-cream w-full z-10">
@@ -52,7 +43,7 @@ const EducationItem: FC<PropsWithChildren<EducationItemProps>> = ({ institution,
         }
       </div>
       { projectTitle ? (
-        <div className="pl-0 lg:pl-4 w-full lg:w-[65%]">
+        <div className="pl-0 lg:pl-4 w-full lg:w-[62%]">
         <h4 className="font-bold italic text-deep-blue text-xl">{ projectTitle }</h4>
           <ul>
             {projectDescription?.map((bullet, index) => {

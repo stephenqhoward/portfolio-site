@@ -5,7 +5,7 @@ type BioProps = {
   skills: string[];
 };
 
-const Bio: FC<BioProps> = ({ text, skills }) => (
+const Bio = ({ text, skills }: BioProps) => (
   <>
     <div className="pb-4 space-y-3 sm:w-full md:w-[60%]">
       <h2 className="text-4xl text-center md:text-left">Stephen Q. Howard</h2>

@@ -1,6 +1,4 @@
-import {type FC } from 'react';
-
-export const DividerNavbar: FC = () => {
+export const DividerNavbar = () => {
 
   return (
     <div className="curve-divider-navbar">
@@ -11,7 +9,7 @@ export const DividerNavbar: FC = () => {
   )
 };
 
-export const DividerHero: FC = () => {
+export const DividerHero = () => {
 
   return (
     <div className="wavy-divider-hero">
@@ -24,7 +22,7 @@ export const DividerHero: FC = () => {
   )
 };
 
-export const DividerBio: FC = () => {
+export const DividerBio = () => {
 
   return (
     <div className="wavy-divider-bio">
@@ -35,7 +33,7 @@ export const DividerBio: FC = () => {
   )
 };
 
-export const DividerEducation: FC = () => {
+export const DividerEducation = () => {
 
   return (
     <div className="wavy-divider-education">
@@ -46,7 +44,7 @@ export const DividerEducation: FC = () => {
   )
 };
 
-export const DividerFooter: FC = () => {
+export const DividerFooter = () => {
 
   return (
     <div className="wave-divider-footer -z-5">
