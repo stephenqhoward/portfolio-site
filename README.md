@@ -17,9 +17,6 @@ Note: Some artifacts that show in Chrome dev tools for the mobile layout are a b
 
 ## Roadmap
 - Add Portfolio Item cover photos with hover-transitions (First take wasn't responsive for mobile)
-- Add smooth-scroll to Navbar links
 - Consider having Navbar fixed while scrolling
 - Consider collapsible Navbar on mobile
 - Consider To Top button on Footer (with smooth scrolling)
-- Sections: Education, Bootcamp Projects, Co-worker Quotes
-- Consider Portfolio Item cover photos with accordion content
