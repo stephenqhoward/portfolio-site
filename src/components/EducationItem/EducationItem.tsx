@@ -42,7 +42,7 @@ const EducationItem = ({ institution, description, honors, technologies, url, pr
         }
       </div>
       { projectTitle ? (
-        <div className="pl-0 lg:pl-4 w-full lg:w-[65%]">
+        <div className="pl-0 lg:pl-4 w-full lg:w-[62%]">
         <h4 className="font-bold italic text-deep-blue text-xl">{ projectTitle }</h4>
           <ul>
             {projectDescription?.map((bullet, index) => {
