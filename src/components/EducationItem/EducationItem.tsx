@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { type imgs } from '../PortfolioItem/PortfolioItem';
 
 export type EducationItemProps = {
+  children: React.ReactNode;
   institution: string;
   description: string;
   technologies?: Array<imgs>;
