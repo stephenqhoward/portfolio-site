@@ -1,11 +1,8 @@
 import { type NextPage } from 'next';
-import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Head from 'next/head';
-import React from 'react';
 
 const Resume: NextPage = () => {
-  const router = useRouter()
 
   return (
     <>
