@@ -39,6 +39,9 @@ const Home: NextPage = () => {
         <title>Stephen Q Howard</title>
         <meta name="description" content="Portfolio site of Stephen Q. Howard" />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Portfolio site of Stephen Q. Howard" />
+        <meta property="og:description" content="Full Stack Developer" />
+        <meta property="og:image" content="http://stephenqhoward.com/Site-Preview.png" />
       </Head>
       <main className="bg-gradient-to-b from-[#457B9D] to-[#1D3557] flex flex-col items-center justify-center min-h-screen">
         <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Education', anchor: '#education'}, {displayText: 'Resume', anchor: '/resume'} ]} />
