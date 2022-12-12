@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import { type imgs } from '../PortfolioItem/PortfolioItem';
+import styles from './EducationItem.module.css';
 
 export type EducationItemProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   institution: string;
   description: string;
   technologies?: Array<imgs>;
@@ -21,28 +22,26 @@ const EducationItem = ({ institution, description, honors, technologies, url, pr
         <a href={ url } target="_blank" rel="noreferrer">
           <h3 className="font-bold text-2xl text-deep-blue">{ institution }</h3>
         </a>
-        <p className="">{ description }</p>
-        { honors ? <p>Honors: { honors }</p> : <></>}
-        { technologies ? (
+        <p>{ description }</p>
+        { honors && <p>Honors: { honors }</p> }
+        { technologies && (
           <>
             <p className="underline">Tech Stack</p>
-            <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center self-center sm:space-y-4 md:space-y-0 technologies-item-buttons lg:self-start w-[75%] lg:w-[33%]">
+            <ul className={`flex flex-row flex-wrap lg:flex-nowrap items-center justify-center self-center sm:space-y-4 md:space-y-0 lg:self-start w-[75%] lg:w-[33%] ${styles["technologies-item-buttons"]}`}>
               {technologies?.map((img) => {
                 return (
                   <a href={ img.url } key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>
-                    <li className=''>
-                      <Image src={ img.src } alt={ img.alt } width={ img.width } className=''>
-                      </Image>
+                    <li>
+                      <Image src={ img.src } alt={ img.alt } width={ img.width } />
                     </li>
                   </a>
                 )
               })}
             </ul>
-          </>) 
-          : <></>
+          </>)
         }
       </div>
-      { projectTitle ? (
+      { projectTitle && (
         <div className="pl-0 lg:pl-4 w-full lg:w-[62%]">
         <h4 className="font-bold italic text-deep-blue text-xl">{ projectTitle }</h4>
           <ul>
@@ -55,20 +54,18 @@ const EducationItem = ({ institution, description, honors, technologies, url, pr
             })}
           </ul>
           <p className="pb-4 underline">External APIs Integrated</p>
-          <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center self-center lg:self-start sm:space-y-4 md:space-y-0 technologies-item-buttons">
+          <ul className={`flex flex-row flex-wrap lg:flex-nowrap items-center justify-center self-center lg:self-start sm:space-y-4 md:space-y-0 ${styles["technologies-item-buttons"]}`}>
             {integratedApis?.map((img) => {
               return (
                 <a href={ img.url } key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>
-                  <li className=''>
-                    <Image src={ img.src } alt={ img.alt } width={ img.width } className=''>
-                    </Image>
+                  <li>
+                    <Image src={ img.src } alt={ img.alt } width={ img.width } />
                   </li>
                 </a>
               )
             })}
           </ul>
-        </div>) 
-        : <></> 
+        </div>)
       }
     </div>
   )

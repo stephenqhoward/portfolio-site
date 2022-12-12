@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { PortfolioItemImage } from './PortfolioItemImage';
+import styles from './PortfolioItem.module.css';
 
 export type imgs = {
   src: string;
@@ -31,11 +32,11 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
   return (
     <div className="border-2 border-blue flex sm:flex-col lg:flex-row flex-wrap p-4 pb-6 rounded-lg space-y-4 w-full z-10">
 
-    { img && imgPosition === "left" ? <PortfolioItemImage
+    { (img && imgPosition === "left") && <PortfolioItemImage
       img={ img }
       url={ url }
       position={ imgPosition }
-    ></PortfolioItemImage> : <></>
+      />
     }
 
     <div className="sm:w-[100%] lg:w-[60%] flex flex-col space-y-6 self-center">
@@ -44,16 +45,15 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
         {technologies.map((img, index) => {
           return (
             <a href={ img.url } key={ index } target="_blank" rel="noreferrer" className={`max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] mx-auto lg:ml-0 lg:mr-4 my-auto`}>
-              <li className=''>
-                <Image src={ img.src } alt={ img.alt } height={ img.height } width={ img.width } className=''>
-                </Image>
+              <li>
+                <Image src={ img.src } alt={ img.alt } height={ img.height } width={ img.width } />
               </li>
             </a>
           )
         })}
       </ul>
         <p className="self-center lg:self-start text-deep-blue text-justify md:text-center lg:text-left sm:w-full md:w-[60%] lg:w-full">{ description }</p>
-      <div className="flex flex-row justify-center lg:justify-start md:self-center lg:self-start md:space-x-12 technologies-item-buttons md:w-[50%]">
+      <div className={`flex flex-row justify-center lg:justify-start md:self-center lg:self-start md:space-x-12 ${styles["technologies-item-buttons"]} md:w-[50%]`}>
         {/* Buttons */}
         {buttons.map((button) => {
           if (button.type === 'disabled') {
@@ -80,11 +80,11 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
       </div>
     </div>
 
-    { img && imgPosition === "right" ? <PortfolioItemImage
+    { (img && imgPosition === "right") && <PortfolioItemImage
       img={ img }
       url={ url }
       position={ imgPosition }
-    ></PortfolioItemImage> : <></>
+      />
     }
   </div>
   )

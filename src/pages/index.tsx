@@ -41,28 +41,28 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-gradient-to-b from-[#1D3557] to-[#457B9d] flex flex-col items-center justify-center min-h-screen">
-        <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Education', anchor: '#education'}, {displayText: 'Resume', anchor: '/resume'} ]}></Navbar>
+        <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Education', anchor: '#education'}, {displayText: 'Resume', anchor: '/resume'} ]} />
 
         <div className="lg:container flex flex-col items-center justify-center w-full">
           
           <section className="bg-cream color-light-blue flex flex-col items-center justify-center min-h-[58vh] min-w-full relative">
-            <DividerNavbar></DividerNavbar>
-            <Hero title={`Hi! I'm Stephen.`} subtitle='Full Stack Developer'></Hero>
-            <DividerHero></DividerHero>
+            <DividerNavbar />
+            <Hero title={`Hi! I'm Stephen.`} subtitle='Full Stack Developer' />
+            <DividerHero />
           </section>
           
           <section className="bg-blue flex flex-col flex-wrap min-h-[40vh] pt-6 pb-12 px-4 md:px-28" id="about">
             <Bio
               text={['I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.','I have a history of researching and implementing technical solutions to business problems.','You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.',`I am looking for experience that will provide awareness for what I don't know, the structure for high performing software development teams, and the core technical competency to prototype and scale startup ideas.`]}
               skills={['JavaScript','Python','ReactJs','Django','PostgreSQL','Typescript','Tailwind','HTML','CSS','Git','GitHub','Slack']}
-            ></Bio>
+            />
           </section>
 
           <section className="bg-cream flex flex-col items-center pb-12 pt-6 px-4 md:px-28 relative space-y-4 w-full" id="portfolio">
-            <DividerBio></DividerBio>
-            <h2 className="md:self-start text-4xl">PORTFOLIO</h2>
+            <DividerBio />
+            <h2 className="md:self-start text-4xl text-blue pt-2">PORTFOLIO</h2>
             <PortfolioItem 
-              title="Urankar Law, LLC - Landing Page"
+              title="Urankar Law, LLC"
               description={`Referencing the client's theme, built and styled the landing page layout and components.`}
               technologies= {[
                 {src: NextJsLogo, alt: 'Next.js', width: 115, url: 'https://nextjs.org/'}, 
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
                 }
               }
               imgPosition="right"
-            ></PortfolioItem>
+            />
             <PortfolioItem 
               title="Discing Up - Full Stack Web Application"
               description="Web application for monitoring weather and reporting course conditions for disc golf courses in central Ohio."
@@ -114,8 +114,9 @@ const Home: NextPage = () => {
                 }
               }
               imgPosition="left"
-            ></PortfolioItem>
-            <DividerEducation></DividerEducation>
+            />
+            <div className='pb-4'></div>
+            <DividerEducation />
           </section>
 
           <section className="bg-blue flex flex-col items-center pb-12 pt-6 px-4 md:px-28 relative space-y-4 w-full" id="education">
@@ -139,21 +140,19 @@ const Home: NextPage = () => {
                 {src: FirebaseLogo, alt: 'Firebase', width: 40, url: 'https://firebase.google.com/'},
                 {src: TwilioLogo, alt: 'Twilio', width: 115, url: 'https://www.twilio.com/'},
               ]} 
-            >
-            </EducationItem>
+            />
             <EducationItem 
               institution="Bowling Green State University"
               description="Bachelor of Science in Business Administration (concentration: accounting)"
               honors="cum laude"
               url="https://www.bgsu.edu/"
-            >
-            </EducationItem>
+            />
             <div className="h-0 md:h-4"></div>
-            <DividerFooter></DividerFooter>
+            <DividerFooter />
           </section>
 
           <section className="bg-deep-blue w-full" id="social">
-            <Footer></Footer>
+            <Footer />
           </section>
 
         </div>

@@ -14,8 +14,11 @@ type NavbarProps = {
 const Navbar = ({ logo, subTitle, links }: NavbarProps) => (
   <div className=" bg-deep-blue lg:container flex flex-row items-center max-h-10 w-full">
     <div className="flex flex-row flex-grow flex-wrap h-12 items-center justify-self-start pl-3">
-      <h2 className="pr-2 text-light-blue">{ logo }</h2>
-      <h3 className="hidden md:flex">{ subTitle }</h3>
+      <h2 className="pr-2 text-light-blue flex flex-row">
+        { logo }
+        <span className="hidden md:flex text-cream ml-2">{ subTitle }</span>
+      </h2>
+      
     </div>
     <div className="items-center justify-self-end">
       <ul className="flex flex-row h-full items-center">
