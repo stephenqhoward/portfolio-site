@@ -20,8 +20,10 @@ Note: Some artifacts that show in Chrome dev tools for the mobile layout are a b
 ## Lighthouse Scorecard
 ![Lighthouse Scorecard](./public/Lighthouse-scorecard.png)
 
+## Version 1.0 Launched!
+12/12/2022
+
 ## Roadmap
-- Add Portfolio Item cover photos with hover-transitions (First take wasn't responsive for mobile)
-- Consider having Navbar fixed while scrolling
-- Consider collapsible Navbar on mobile
+- Add Portfolio Item cover photos with hover-transitions (First take wasn't responsive for mobile - see feature/007)
 - Consider To Top button on Footer (with smooth scrolling)
+- Update Portfolio Item - Discing Up once basic full stack functionality is complete
