@@ -15,6 +15,9 @@ This site is bootstrapped according to the [init.tips](https://init.tips) stack,
 Curve & Wavy styling curteousy of [Shape Divider App](shapedivider.app).
 Note: Some artifacts that show in Chrome dev tools for the mobile layout are a bug with Chrome dev tools and do not show on mobile.
 
+## Lighthouse Scorecard
+[Lighthouse Scorecard](./public/Lighthouse-scorecard.png)
+
 ## Roadmap
 - Add Portfolio Item cover photos with hover-transitions (First take wasn't responsive for mobile)
 - Consider having Navbar fixed while scrolling
