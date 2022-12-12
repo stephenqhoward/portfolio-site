@@ -40,18 +40,18 @@ const Home: NextPage = () => {
         <meta name="description" content="Portfolio site of Stephen Q. Howard" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-b from-[#1D3557] to-[#457B9d] flex flex-col items-center justify-center min-h-screen">
+      <main className="bg-gradient-to-b from-[#457B9D] to-[#1D3557] flex flex-col items-center justify-center min-h-screen">
         <Navbar logo="SQH" subTitle="Portfolio Site" links={[{displayText: 'About', anchor: '#about'}, {displayText: 'Portfolio', anchor: '#portfolio'}, {displayText: 'Education', anchor: '#education'}, {displayText: 'Resume', anchor: '/resume'} ]} />
 
         <div className="lg:container flex flex-col items-center justify-center w-full">
           
-          <section className="bg-cream color-light-blue flex flex-col items-center justify-center min-h-[58vh] min-w-full relative">
+          <section className="bg-cream color-light-blue flex flex-col items-center justify-center min-h-[48vh] min-w-full relative">
             <DividerNavbar />
             <Hero title={`Hi! I'm Stephen.`} subtitle='Full Stack Developer' />
             <DividerHero />
           </section>
           
-          <section className="bg-blue flex flex-col flex-wrap min-h-[40vh] pt-6 pb-12 px-4 md:px-28" id="about">
+          <section className="bg-deep-blue flex flex-col flex-wrap min-h-[40vh] pt-6 pb-12 px-4 md:px-28" id="about">
             <Bio
               text={['I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.','I have a history of researching and implementing technical solutions to business problems.','You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.',`I am looking for experience that will provide awareness for what I don't know, the structure for high performing software development teams, and the core technical competency to prototype and scale startup ideas.`]}
               skills={['JavaScript','Python','ReactJs','Django','PostgreSQL','Typescript','Tailwind','HTML','CSS','Git','GitHub','Slack']}
@@ -119,7 +119,7 @@ const Home: NextPage = () => {
             <DividerEducation />
           </section>
 
-          <section className="bg-blue flex flex-col items-center pb-12 pt-6 px-4 md:px-28 relative space-y-4 w-full" id="education">
+          <section className="bg-deep-blue flex flex-col items-center pb-12 pt-6 px-4 md:px-28 relative space-y-4 w-full" id="education">
             <h2 className="md:self-start text-4xl">Education</h2>
             <EducationItem 
               institution="Code Platoon"
@@ -151,7 +151,7 @@ const Home: NextPage = () => {
             <DividerFooter />
           </section>
 
-          <section className="bg-deep-blue w-full" id="social">
+          <section className="bg-blue w-full" id="social">
             <Footer />
           </section>
 

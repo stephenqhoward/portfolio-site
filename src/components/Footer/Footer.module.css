@@ -1,9 +1,9 @@
 .linkedin-logo {
-  color: #A8DADC;
+  color: #1D3557;
 }
 
 li:hover .linkedin-logo .inner {
-  color: #E63946;
+  color: #B32D38;
 }
 
 .linkedin-logo .outer {
@@ -18,7 +18,7 @@ li:hover .linkedin-logo .inner {
   fill-rule: evenodd;
 }
 
-.footer ul a:hover,
-.footer ul a:focus {
-  background-color: #E63946;
+.footer ul li:hover,
+.footer ul li:focus {
+  background-color: #B32D38;
 }
