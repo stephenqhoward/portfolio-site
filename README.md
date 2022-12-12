@@ -4,6 +4,8 @@ Welcome to my portfolio site code base. Please let me know if you find anything 
 
 ## Technologies Used
 - [Next.js](https://nextjs.org)
+- [React.js](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com)
 - [Vercel](https://vercel.com)
 
@@ -15,8 +17,13 @@ This site is bootstrapped according to the [init.tips](https://init.tips) stack,
 Curve & Wavy styling curteousy of [Shape Divider App](shapedivider.app).
 Note: Some artifacts that show in Chrome dev tools for the mobile layout are a bug with Chrome dev tools and do not show on mobile.
 
+## Lighthouse Scorecard
+![Lighthouse Scorecard](./public/Lighthouse-scorecard.png)
+
+## Version 1.0 Launched!
+12/12/2022
+
 ## Roadmap
-- Add Portfolio Item cover photos with hover-transitions (First take wasn't responsive for mobile)
-- Consider having Navbar fixed while scrolling
-- Consider collapsible Navbar on mobile
+- Add Portfolio Item cover photos with hover-transitions (First take wasn't responsive for mobile - see feature/007)
 - Consider To Top button on Footer (with smooth scrolling)
+- Update Portfolio Item - Discing Up once basic full stack functionality is complete
