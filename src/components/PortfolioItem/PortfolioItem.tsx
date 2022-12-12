@@ -32,11 +32,11 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
   return (
     <div className="border-2 border-blue flex sm:flex-col lg:flex-row flex-wrap p-4 pb-6 rounded-lg space-y-4 w-full z-10">
 
-    { img && imgPosition === "left" ? <PortfolioItemImage
+    { (img && imgPosition === "left") && <PortfolioItemImage
       img={ img }
       url={ url }
       position={ imgPosition }
-    /> : null
+      />
     }
 
     <div className="sm:w-[100%] lg:w-[60%] flex flex-col space-y-6 self-center">
@@ -80,11 +80,11 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
       </div>
     </div>
 
-    { img && imgPosition === "right" ? <PortfolioItemImage
+    { (img && imgPosition === "right") && <PortfolioItemImage
       img={ img }
       url={ url }
       position={ imgPosition }
-    /> : null
+      />
     }
   </div>
   )
