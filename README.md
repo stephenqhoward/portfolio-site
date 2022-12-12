@@ -3,7 +3,7 @@ Welcome to my portfolio site code base. Please let me know if you find anything 
 
 
 ## Technologies Used
-- [Next.js](https://nextjs.org)
+- [Next.js](https://nextjs.org) (React / Typescript)
 - [TailwindCSS](https://tailwindcss.com)
 - [Vercel](https://vercel.com)
 
