@@ -44,15 +44,15 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
       <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start sm:space-y-4 md:space-y-0">
         {technologies.map((img, index) => {
           return (
-            <a href={ img.url } key={ index } target="_blank" rel="noreferrer" className={`max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] mx-auto lg:ml-0 lg:mr-4 my-auto`}>
-              <li>
+            <li key={ index } className={`max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] mx-auto lg:ml-0 lg:mr-4 my-auto min-h-full`}>
+              <a href={ img.url } target="_blank" rel="noreferrer" className="w-full h-full">
                 <Image src={ img.src } alt={ img.alt } height={ img.height } width={ img.width } />
-              </li>
-            </a>
+              </a>
+            </li>
           )
         })}
       </ul>
-        <p className="self-center lg:self-start text-deep-blue text-justify md:text-center lg:text-left sm:w-full md:w-[60%] lg:w-full">{ description }</p>
+        <p className="self-center lg:self-start text-deep-blue text-lg text-justify md:text-center lg:text-left sm:w-full md:w-[60%] lg:w-full">{ description }</p>
       <div className={`flex flex-row justify-center lg:justify-start md:self-center lg:self-start md:space-x-12 ${styles["technologies-item-buttons"]} md:w-[50%]`}>
         {/* Buttons */}
         {buttons.map((button) => {
@@ -66,7 +66,7 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
           } else if (button.type === 'live') {
             return (
               <a href={ button.url } className="bg-red hover:bg-light-red font-bold h-16 rounded-xl text-lg w-32" target="_blank" rel="noreferrer" key={ button.type }>
-                <button className="h-16 text-cream w-32">{ button.text }</button>
+                <button className="h-16 text-white w-32">{ button.text }</button>
               </a>
             )
           } else {

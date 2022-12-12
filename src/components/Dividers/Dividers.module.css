@@ -38,7 +38,7 @@
 }
 
 .wavy-divider-hero .shape-fill {
-  fill: #457B9D;
+  fill: #1D3557;
 }
 
 /* Wavy Divider Bio */
@@ -60,7 +60,7 @@
 }
 
 .wavy-divider-bio .shape-fill {
-  fill: #457B9D;
+  fill: #1D3557; 
 }
 
 /* Wavy Divider Education */
@@ -81,7 +81,7 @@
 }
 
 .wavy-divider-education .shape-fill {
-  fill: #457B9D;
+  fill: #1D3557; 
 }
 
 /* Wavy Divider Footer */
@@ -102,5 +102,5 @@
 }
 
 .wave-divider-footer .shape-fill {
-  fill: #1D3557;
+  fill: #457B9D;
 }

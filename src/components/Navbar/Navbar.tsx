@@ -24,7 +24,11 @@ const Navbar = ({ logo, subTitle, links }: NavbarProps) => (
       <ul className="flex flex-row h-full items-center">
         {links.map((link) => {
           return (
-            <Link key={ link.displayText } href={ link.anchor } className="hover:bg-light-blue h-full px-2 lg:px-6 rounded-full self-center"><li>{ link.displayText }</li></Link>
+            <li key={ link.displayText } className="hover:bg-light-blue h-full rounded-full self-center mx-2 lg:mx-6 py-1 lg:px-4">
+              <Link href={ link.anchor }>
+                { link.displayText }
+              </Link>
+            </li>
           )
         })}
       </ul>

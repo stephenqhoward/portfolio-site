@@ -9,13 +9,13 @@ const Bio = ({ text, skills }: BioProps) => (
       <h2 className="text-4xl text-center md:text-left">Stephen Q. Howard</h2>
       {text.map((paragraph, index) => {
         return (
-          <p className="text-justify md:text-left" key={ index }>{ paragraph }</p>
+          <p className="text-justify md:text-left text-cream text-lg" key={ index }>{ paragraph }</p>
         )
       })}
     </div>
     <div>
       <h3 className='text-light-blue font-bold'>Skills</h3>
-      <ul className="flex flex-row flex-wrap">
+      <ul className="flex flex-row flex-wrap text-cream text-lg">
         {skills.map((skill, index) => {
           // Add bullet point to each skill except the last one.
           while(index !== skills.length-1) {
