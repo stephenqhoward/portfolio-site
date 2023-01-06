@@ -103,15 +103,15 @@ const Home: NextPage = () => {
                 {src: TailwindLogo, alt: 'Tailwind CSS', width: 40, url: 'https://tailwindcss.com/'},
                 {src: VercelLogo, alt: 'Vercel', width: 105, url: 'https://vercel.com/'},
               ]}
-              url='https://discing-up.vercel.app/'
+              url='https://discing-up.stephenqhoward.com/'
               buttons={[
-                {url: 'http://urankarlaw.com', type: 'site', text: 'Live Site'}, 
+                {url: 'https://discing-up.stephenqhoward.com/', type: 'site', text: 'Live Site'}, 
                 {type: 'disabled', text: 'GitHub', subtext:'(Private Repo)'}
               ]}
               img={
                 {
                   src: '/img/discing-up-thumbnail.png',
-                  alt: 'Urankar Law, LLC',
+                  alt: 'Discing Up',
                   width: 350,
                   height: 400,
                 }
