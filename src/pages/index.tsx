@@ -105,7 +105,7 @@ const Home: NextPage = () => {
               ]}
               url='https://discing-up.stephenqhoward.com/'
               buttons={[
-                {url: 'https://discing-up.stephenqhoward.com/', type: 'site', text: 'Live Site'}, 
+                {url: 'https://discing-up.stephenqhoward.com/', type: 'live', text: 'Live Site'}, 
                 {type: 'disabled', text: 'GitHub', subtext:'(Private Repo)'}
               ]}
               img={
