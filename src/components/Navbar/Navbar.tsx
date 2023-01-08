@@ -21,12 +21,12 @@ const Navbar = ({ logo, subTitle, links }: NavbarProps) => (
       
     </div>
     <div className="items-center justify-self-end">
-      <ul className="flex flex-row h-full items-center">
+      <ul className="flex flex-row items-center h-10">
         {links.map((link) => {
           return (
-            <li key={ link.displayText } className="hover:bg-light-blue h-full rounded-full self-center mx-2 lg:mx-6 py-1 lg:px-4">
-              <Link href={ link.anchor }>
-                { link.displayText }
+            <li key={ link.displayText } className="duration-500 motion-safe:hover:scale-105">
+              <Link href={ link.anchor } className={`hover:bg-light-blue rounded-full self-center mx-2 lg:mx-6 py-2 lg:px-4 duration-500`}>
+                <span>{ link.displayText }</span>
               </Link>
             </li>
           )
