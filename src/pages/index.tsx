@@ -112,7 +112,7 @@ const Home: NextPage = () => {
                 {
                   src: '/img/discing-up-thumbnail.png',
                   alt: 'Discing Up',
-                  width: 350,
+                  width: 375,
                   height: 400,
                 }
               }
