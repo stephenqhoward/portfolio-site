@@ -26,4 +26,3 @@ Note: Some artifacts that show in Chrome dev tools for the mobile layout are a b
 ## Roadmap
 - Add Portfolio Item cover photos with hover-transitions (First take wasn't responsive for mobile - see feature/007)
 - Consider To Top button on Footer (with smooth scrolling)
-- Update Portfolio Item - Discing Up once basic full stack functionality is complete

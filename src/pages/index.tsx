@@ -27,6 +27,7 @@ import PostgresqlLogo from '../../public/img/postgresql-icon.svg';
 import ZodLogo from '../../public/img/zod-icon.png';
 import Auth0Logo from '../../public/img/auth0-icon.svg';
 import DjangoLogo from '../../public/img/django-icon.svg';
+import DjangoRestFrameworkLogo from '../../public/img/drf-logo.png';
 import GoogleCalendarLogo from '../../public/img/Google_Calendar_icon.svg';
 import FirebaseLogo from '../../public/img/firebase-icon.svg';
 import TwilioLogo from '../../public/img/Twilio-logo.svg';
@@ -112,7 +113,7 @@ const Home: NextPage = () => {
                 {
                   src: '/img/discing-up-thumbnail.png',
                   alt: 'Discing Up',
-                  width: 350,
+                  width: 375,
                   height: 400,
                 }
               }
@@ -130,6 +131,7 @@ const Home: NextPage = () => {
               technologies={[
                 {src: ReactLogo, alt: 'React.js', width: 40, url: 'https://reactjs.org/'},
                 {src: DjangoLogo, alt: 'Django', width: 30, url: 'https://www.djangoproject.com/'},
+                {src: DjangoRestFrameworkLogo, alt: 'Django Rest Framework', width: 100, url: 'https://www.django-rest-framework.org/'},
                 {src: PostgresqlLogo, alt: 'PostgreSQL', width: 40, url:'https://www.postgresql.org/'},
               ]} 
               url="https://www.codeplatoon.org/"

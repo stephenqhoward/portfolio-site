@@ -30,7 +30,7 @@ const EducationItem = ({ institution, description, honors, technologies, url, pr
             <ul className={`flex flex-row flex-wrap lg:flex-nowrap items-center justify-center self-center sm:space-y-4 md:space-y-0 lg:self-start w-[75%] lg:w-[33%] ${styles["technologies-item-buttons"]}`}>
               {technologies?.map((img) => {
                 return (
-                  <li key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>
+                  <li key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] duration-500 motion-safe:hover:scale-110`}>
                     <a href={ img.url }>
                       <Image src={ img.src } alt={ img.alt } width={ img.width } />
                     </a>
@@ -57,7 +57,7 @@ const EducationItem = ({ institution, description, honors, technologies, url, pr
           <ul className={`flex flex-row flex-wrap lg:flex-nowrap items-center justify-center self-center lg:self-start sm:space-y-4 md:space-y-0 ${styles["technologies-item-buttons"]}`}>
             {integratedApis?.map((img) => {
               return (
-                <li key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px]`}>
+                <li key={ img.alt } className={`sm:max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] duration-500 motion-safe:hover:scale-110`}>
                   <a href={ img.url }>
                     <Image src={ img.src } alt={ img.alt } width={ img.width } />
                   </a>
