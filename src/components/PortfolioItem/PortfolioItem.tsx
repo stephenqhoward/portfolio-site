@@ -65,7 +65,7 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
             )
           } else if (button.type === 'live') {
             return (
-              <a href={ button.url } className="bg-red hover:bg-light-red font-bold h-16 rounded-xl text-lg w-32 shadow-xl duration-500 motion-safe:hover:scale-110" target="_blank" rel="noreferrer" key={ button.type }>
+              <a href={ button.url } className="bg-red hover:bg-light-red font-bold h-16 rounded-xl text-lg w-32 duration-500 motion-safe:hover:scale-110" target="_blank" rel="noreferrer" key={ button.type }>
                 <button className="h-16 text-white w-32">{ button.text }</button>
               </a>
             )

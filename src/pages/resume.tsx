@@ -12,7 +12,7 @@ const Resume: NextPage = () => {
       </Head>
       <main className="flex flex-col min-h-screen items-center bg-gradient-to-b from-[#1D3557] to-[#457B9d]">
         <Link href='/'>
-          <div className="w-32 h-16 bg-cream fixed left-8 top-8 rounded-xl hover:cursor-pointer hover:bg-light-blue flex justify-center shadow-xl duration-500 motion-safe:hover:scale-110">
+          <div className="w-32 h-16 bg-cream fixed left-8 top-8 rounded-xl hover:cursor-pointer hover:bg-light-blue flex justify-center duration-500 motion-safe:hover:scale-110">
             <p className="text-deep-blue font-bold text-2xl m-auto">Back</p>
           </div>
         </Link>
