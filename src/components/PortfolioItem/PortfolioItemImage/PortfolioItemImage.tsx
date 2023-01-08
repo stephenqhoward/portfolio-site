@@ -18,7 +18,7 @@ const PortfolioItemImage = ({ img, url, position }: portfolioItemImageProps) => 
   }
 
   if (img) {
-    image = <a href={ url } className="font-bold rounded-xl text-lg" target="_blank" rel="noreferrer">
+    image = <a href={ url } className="font-bold rounded-xl text-lg duration-500 motion-safe:hover:scale-105" target="_blank" rel="noreferrer">
     <Image src={ img.src } alt={ img.alt } width={ img.width } height={ img.height } className={ imgClassNames } />
   </a>
   }

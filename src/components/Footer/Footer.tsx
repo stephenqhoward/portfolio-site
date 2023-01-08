@@ -7,7 +7,7 @@ const Footer = () => (
   <>
     <div className={styles["footer"]}>
       <ul className="flex flex-row items-center justify-center my-4 md:my-8 space-x-8">
-        <li className="bg-deep-blue flex items-center rounded-full">
+        <li className="bg-deep-blue flex items-center rounded-full shadow-xl duration-500 motion-safe:hover:scale-105">
           <a href='https://www.linkedin.com/in/stephenqhoward/' target="_blank" rel="noreferrer" aria-label="Linked In Profile" className="rounded-full">
             <div className="flex h-20 place-self-center w-20">
               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.31" className={`${styles["linkedin-logo"]} h-12 mx-auto self-center w-12`}>
@@ -17,14 +17,14 @@ const Footer = () => (
             </div>
           </a>
         </li>
-        <li className="bg-deep-blue rounded-full">
+        <li className="bg-deep-blue rounded-full shadow-xl duration-500 motion-safe:hover:scale-105">
           <a href='https://github.com/stephenqhoward' target="_blank" rel="noreferrer" aria-label="GitHub Profile" className="bg-deep-blue rounded-full">
             <div className="flex h-20 justify-items-center text-center w-20">
               <Image alt="GitHub" src={ GitHubLogo } width={80} className="mx-auto self-center h-12 w-12" />
             </div>
           </a>
         </li>
-        <li className="bg-deep-blue rounded-full">
+        <li className="bg-deep-blue rounded-full shadow-xl duration-500 motion-safe:hover:scale-105">
           <Link href='/resume' className="flex h-20 rounded-full w-20">    
             <p className="font-bold mx-auto self-center">Resume</p>
           </Link>

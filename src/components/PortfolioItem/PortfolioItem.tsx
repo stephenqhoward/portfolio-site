@@ -44,7 +44,7 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
       <ul className="flex flex-row flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start sm:space-y-4 md:space-y-0">
         {technologies.map((img, index) => {
           return (
-            <li key={ index } className={`max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] mx-auto lg:ml-0 lg:mr-4 my-auto min-h-full`}>
+            <li key={ index } className={`max-w-[90px] md:max-w-full lg:min-w-[${img.width}px] mx-auto lg:ml-0 lg:mr-4 my-auto min-h-full duration-500 motion-safe:hover:scale-110`}>
               <a href={ img.url } target="_blank" rel="noreferrer" className="w-full h-full">
                 <Image src={ img.src } alt={ img.alt } height={ img.height } width={ img.width } />
               </a>
@@ -65,7 +65,7 @@ const PortfolioItem = ({ title, description, technologies, url, buttons, img, im
             )
           } else if (button.type === 'live') {
             return (
-              <a href={ button.url } className="bg-red hover:bg-light-red font-bold h-16 rounded-xl text-lg w-32" target="_blank" rel="noreferrer" key={ button.type }>
+              <a href={ button.url } className="bg-red hover:bg-light-red font-bold h-16 rounded-xl text-lg w-32 shadow-xl duration-500 motion-safe:hover:scale-110" target="_blank" rel="noreferrer" key={ button.type }>
                 <button className="h-16 text-white w-32">{ button.text }</button>
               </a>
             )
