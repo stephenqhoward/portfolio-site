@@ -41,7 +41,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Portfolio site of Stephen Q. Howard" />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="Portfolio site of Stephen Q. Howard" />
-        <meta property="og:description" content="Full Stack Developer" />
+        <meta property="og:description" content="Full Stack Software Engineer" />
         <meta property="og:image" content="https://www.stephenqhoward.com/Site-Preview.png" />
       </Head>
       <main className="bg-gradient-to-b from-[#457B9D] to-[#1D3557] flex flex-col items-center justify-center min-h-screen">
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
           
           <section className="bg-cream color-light-blue flex flex-col items-center justify-center min-h-[48vh] min-w-full relative">
             <DividerNavbar />
-            <Hero title={`Hi! I'm Stephen.`} subtitle='Full Stack Developer' />
+            <Hero title={`Hi! I'm Stephen.`} subtitle='Full Stack Software Engineer' />
             <DividerHero />
           </section>
           
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
               url="https://www.codeplatoon.org/"
               projectTitle="Group Project: Ahead of the Game (AotG)"
               projectDescription={[
-                "A service that allows users to integrate their favorite teams' schedule into Google Calendar and subscribe to event-start text notifications.", 
+                "A service that enables users to integrate their favorite teams' schedule into Google Calendar and subscribe to event-start text notifications.", 
                 "Personal Contribution: Google Calendar integration • CI/CD to Heroku using GitHub Actions • dependency managemet • database design • Mural & Trello board management"]}
               integratedApis={[
                 {src: Auth0Logo, alt: 'Auth0', width: 40, url: 'https://auth0.com/'},
