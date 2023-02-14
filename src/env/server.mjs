@@ -3,8 +3,13 @@
  * This file is included in `/next.config.mjs` which ensures the app isn't built with invalid env vars.
  * It has to be a `.mjs`-file to be imported there.
  */
-import { serverSchema } from "./schema.mjs";
-import { env as clientEnv, formatErrors } from "./client.mjs";
+import {
+  serverSchema
+} from "./schema.mjs";
+import {
+  env as clientEnv,
+  formatErrors
+} from "./client.mjs";
 
 const _serverEnv = serverSchema.safeParse(process.env);
 
@@ -24,4 +29,7 @@ for (let key of Object.keys(_serverEnv.data)) {
   }
 }
 
-export const env = { ..._serverEnv.data, ...clientEnv };
+export const env = {
+  ..._serverEnv.data,
+  ...clientEnv
+};

@@ -1,9 +1,9 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 type link = {
   displayText: string;
   anchor: string;
-}
+};
 
 type NavbarProps = {
   logo?: string;
@@ -12,24 +12,29 @@ type NavbarProps = {
 };
 
 const Navbar = ({ logo, subTitle, links }: NavbarProps) => (
-  <div className=" bg-deep-blue lg:container flex flex-row items-center max-h-10 w-full">
-    <div className="flex flex-row flex-grow flex-wrap h-12 items-center justify-self-start pl-3">
-      <h2 className="pr-2 text-light-blue flex flex-row">
-        { logo }
-        <span className="hidden md:flex text-cream ml-2">{ subTitle }</span>
+  <div className=" flex max-h-10 w-full flex-row items-center bg-deep-blue lg:container">
+    <div className="flex h-12 flex-grow flex-row flex-wrap items-center justify-self-start pl-3">
+      <h2 className="flex flex-row pr-2 text-light-blue">
+        {logo}
+        <span className="ml-2 hidden text-cream md:flex">{subTitle}</span>
       </h2>
-      
     </div>
     <div className="items-center justify-self-end">
-      <ul className="flex flex-row items-center h-10">
+      <ul className="flex h-10 flex-row items-center">
         {links.map((link) => {
           return (
-            <li key={ link.displayText } className="duration-500 motion-safe:hover:scale-105">
-              <Link href={ link.anchor } className={`hover:bg-light-blue rounded-full self-center mx-2 lg:mx-6 py-2 lg:px-4 duration-500`}>
-                <span>{ link.displayText }</span>
+            <li
+              key={link.displayText}
+              className="duration-500 motion-safe:hover:scale-105"
+            >
+              <Link
+                href={link.anchor}
+                className={`mx-2 self-center rounded-full py-2 duration-500 hover:bg-light-blue lg:mx-6 lg:px-4`}
+              >
+                <span>{link.displayText}</span>
               </Link>
             </li>
-          )
+          );
         })}
       </ul>
     </div>
