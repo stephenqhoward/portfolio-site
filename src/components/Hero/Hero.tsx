@@ -5,9 +5,10 @@ type HeroProps = {
 
 const Hero = ({ title, subtitle }: HeroProps) => (
   <div className="my-14 text-center">
-    <h1 className="font-bold text-4xl text-deep-blue">{ title } 
+    <h1 className="text-4xl font-bold text-deep-blue">
+      {title}
       <br />
-      <span className="text-2xl text-center text-blue">{ subtitle }</span>
+      <span className="text-center text-2xl text-blue">{subtitle}</span>
     </h1>
   </div>
 );
