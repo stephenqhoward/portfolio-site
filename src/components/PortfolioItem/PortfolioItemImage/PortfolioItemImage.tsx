@@ -14,15 +14,15 @@ const PortfolioItemImage = ({
 }: portfolioItemImageProps) => {
   let image = null;
   let imgClassNames =
-    "lg:drop-shadow-[8px_8px_8px_rgba(0,0,0,0.5)] rounded-md lg:skew-y-3";
+    "lg:drop-shadow-[8px_8px_8px_rgba(0,0,0,0.5)] rounded-md xl:skew-y-2";
   let divClassNames =
-    "flex items-center sm:justify-center lg:justify-end lg:pr-4 sm:w-[100%] lg:w-[40%]";
+    "flex items-center sm:justify-center xl:justify-end xl:pr-4 sm:w-[100%] xl:w-[40%]";
 
   if (position === "left") {
     imgClassNames =
-      "lg:drop-shadow-[-8px_8px_8px_rgba(0,0,0,0.5)] rounded-md lg:-skew-y-3";
+      "lg:drop-shadow-[-8px_8px_8px_rgba(0,0,0,0.5)] rounded-md xl:-skew-y-2";
     divClassNames =
-      "flex items-center sm:justify-center lg:justify-start lg:pl-4 sm:w-[100%] lg:w-[40%]";
+      "flex items-center sm:justify-center xl:justify-start xl:pl-4 sm:w-[100%] xl:w-[40%]";
   }
 
   if (img) {
