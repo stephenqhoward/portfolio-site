@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { PortfolioItemImage } from "./PortfolioItemImage";
-import styles from "./PortfolioItem.module.css";
 
 export type imgs = {
   src: string;
@@ -37,16 +36,16 @@ const PortfolioItem = ({
   imgPosition,
 }: PortfolioItemProps) => {
   return (
-    <div className="z-10 flex w-full flex-wrap space-y-4 rounded-lg border-2 border-blue p-4 pb-6 sm:flex-col lg:flex-row">
+    <div className="z-10 flex w-full flex-col flex-wrap space-y-4 rounded-lg border-2 border-blue p-4 pb-6 xl:flex-row">
       {img && imgPosition === "left" && (
         <PortfolioItemImage img={img} url={url} position={imgPosition} />
       )}
 
-      <div className="flex flex-col space-y-6 self-center sm:w-[100%] lg:w-[60%]">
-        <h3 className="text-center text-2xl font-bold text-deep-blue lg:text-left">
+      <div className="flex flex-col space-y-6 self-center sm:w-[100%] lg:w-[80%] xl:w-[60%]">
+        <h3 className="text-center text-2xl font-bold text-deep-blue xl:text-left">
           {title}
         </h3>
-        <ul className="flex flex-row flex-wrap items-center justify-center sm:space-y-4 md:space-y-0 lg:flex-nowrap lg:justify-start">
+        <ul className="flex flex-row flex-wrap items-center justify-center sm:space-y-3 xl:flex-nowrap xl:justify-start xl:space-y-0">
           {technologies.map((img, index) => {
             return (
               <li
@@ -70,11 +69,11 @@ const PortfolioItem = ({
             );
           })}
         </ul>
-        <p className="self-center text-justify text-lg text-deep-blue sm:w-full md:w-[60%] md:text-center lg:w-full lg:self-start lg:text-left">
+        <p className="self-center text-justify text-lg text-deep-blue sm:w-full md:w-[60%] md:text-center lg:w-[80%] lg:text-left xl:w-full xl:self-start">
           {description}
         </p>
         <div
-          className={`flex flex-row justify-center md:space-x-12 md:self-center lg:justify-start lg:self-start ${styles["technologies-item-buttons"]} md:w-[50%]`}
+          className={`flex w-full flex-row flex-wrap justify-around self-center md:w-[80%] md:space-x-12 xl:justify-start xl:self-start`}
         >
           {/* Buttons */}
           {buttons.map((button) => {
@@ -102,7 +101,7 @@ const PortfolioItem = ({
                   </button>
                 </a>
               );
-            } else {
+            } else if (button.type === "unavailable") {
               return (
                 <div
                   className="flex h-16 w-32 items-center justify-center rounded-xl bg-light-blue"
@@ -112,6 +111,19 @@ const PortfolioItem = ({
                     Coming Soon!
                   </p>
                 </div>
+              );
+            } else if (button.type === "details") {
+              return (
+                <a
+                  href={button.url}
+                  className="mt-6 h-16 w-32 rounded-xl bg-deep-blue text-lg font-bold duration-500 hover:bg-light-blue motion-safe:hover:scale-110 sm:mt-0"
+                  rel="noreferrer"
+                  key={button.type}
+                >
+                  <button className="h-16 w-32 text-white">
+                    {button.text}
+                  </button>
+                </a>
               );
             }
           })}
