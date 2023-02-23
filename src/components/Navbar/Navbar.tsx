@@ -8,10 +8,11 @@ type link = {
 type NavbarProps = {
   logo?: string;
   subTitle?: string;
-  links: link[];
+  jumpLinks: link[];
+  pageLinks: link[];
 };
 
-const Navbar = ({ logo, subTitle, links }: NavbarProps) => (
+const Navbar = ({ logo, subTitle, jumpLinks, pageLinks }: NavbarProps) => (
   <div className=" flex max-h-10 w-full flex-row items-center bg-deep-blue lg:container">
     <div className="flex h-12 flex-grow flex-row flex-wrap items-center justify-self-start pl-3">
       <h2 className="flex flex-row pr-2 text-light-blue">
@@ -21,7 +22,22 @@ const Navbar = ({ logo, subTitle, links }: NavbarProps) => (
     </div>
     <div className="items-center justify-self-end">
       <ul className="flex h-10 flex-row items-center">
-        {links.map((link) => {
+        {jumpLinks.map((link) => {
+          return (
+            <li
+              key={link.displayText}
+              className="duration-500 motion-safe:hover:scale-105"
+            >
+              <a
+                href={link.anchor}
+                className={`smooth mx-2 self-center rounded-full py-2 duration-500 hover:bg-light-blue lg:mx-6 lg:px-4`}
+              >
+                <span>{link.displayText}</span>
+              </a>
+            </li>
+          );
+        })}
+        {pageLinks.map((link) => {
           return (
             <li
               key={link.displayText}
@@ -29,7 +45,7 @@ const Navbar = ({ logo, subTitle, links }: NavbarProps) => (
             >
               <Link
                 href={link.anchor}
-                className={`mx-2 self-center rounded-full py-2 duration-500 hover:bg-light-blue lg:mx-6 lg:px-4`}
+                className={`smooth mx-2 self-center rounded-full py-2 duration-500 hover:bg-light-blue lg:mx-6 lg:px-4`}
               >
                 <span>{link.displayText}</span>
               </Link>

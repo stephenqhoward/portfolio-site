@@ -59,16 +59,16 @@ const Home: NextPage = () => {
         <Navbar
           logo="SQH"
           subTitle="Portfolio Site"
-          links={[
+          jumpLinks={[
             { displayText: "About", anchor: "#about" },
             { displayText: "Portfolio", anchor: "#portfolio" },
             { displayText: "Education", anchor: "#education" },
-            { displayText: "Resume", anchor: "/resume" },
           ]}
+          pageLinks={[{ displayText: "Resume", anchor: "/resume" }]}
         />
 
         <div className="flex w-full flex-col items-center justify-center lg:container">
-          <section className="color-light-blue relative flex min-h-[48vh] min-w-full flex-col items-center justify-center bg-cream">
+          <section className="color-light-blue relative flex min-h-[60vh] min-w-full flex-col items-center justify-center bg-cream">
             <DividerNavbar />
             <Hero
               title={`Hi! I'm Stephen.`}
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
           >
             <Bio
               bullets={[
-                "... someone who in the Summer & Fall between finishing college and starting work, can study 12 hours a day and pass all four sections of the Certified Public Accountant exam.",
+                "... someone who between finishing college and starting work, studied 12 hours a day for 6 months and passed all four sections of the Certified Public Accountant exam.",
                 "... no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.",
                 "... a recent graduate of a 28-week full stack software engineering boot camp, while working full time.",
                 "... one who enjoys working on multiple levels of abstraction simultaneously.",
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
               ]}
               text={[
                 "Coding is work for some. It's play for me. I love shipping code.",
-                "Check out my portfolio section to see what I have shipped. I have most recently worked on Discing Up, which I am particularly proud of.",
+                "Discing Up is an app I have shipped most recently. I am proud of the challenges I have overcome to get this live, functional, and stable.",
               ]}
               quotedText="Coding is work for some. It's play for me. I love shipping code."
               skills={[
@@ -256,10 +256,10 @@ const Home: NextPage = () => {
           </section>
 
           <section
-            className="relative flex w-full flex-col items-center space-y-4 bg-deep-blue px-4 pb-12 pt-6 md:px-28"
+            className="relative flex w-full flex-col items-center space-y-4 bg-deep-blue px-2 pb-12 pt-6 md:px-4"
             id="education"
           >
-            <h2 className="text-4xl md:self-start">Education</h2>
+            <h2 className="self-start text-4xl md:self-center">Education</h2>
             <EducationItem
               institution="Code Platoon"
               description="28-Week Online Full Stack Development Bootcamp"

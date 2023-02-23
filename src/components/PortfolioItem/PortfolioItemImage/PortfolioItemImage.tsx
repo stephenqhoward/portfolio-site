@@ -20,6 +20,7 @@ const PortfolioItemImage = ({
 
   if (position === "left") {
     imgClassNames =
+      // Invert the skew and drop-shadow directions
       "lg:drop-shadow-[-8px_8px_8px_rgba(0,0,0,0.5)] rounded-md xl:-skew-y-2";
     divClassNames =
       "flex items-center sm:justify-center xl:justify-start xl:pl-4 sm:w-[100%] xl:w-[40%]";
@@ -37,7 +38,7 @@ const PortfolioItemImage = ({
           src={img.src}
           alt={img.alt}
           width={img.width}
-          height={img.height}
+          height="0"
           className={imgClassNames}
         />
       </a>

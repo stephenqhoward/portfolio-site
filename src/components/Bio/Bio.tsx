@@ -13,9 +13,14 @@ const Bio = ({ bullets, quotedText, text, skills }: BioProps) => (
         {/* ... bullet points */}
         <ul className="text-md ml-0 w-full space-y-4 md:ml-5 md:w-[80%]">
           {bullets.map((paragraph, index) => {
+            const highlightBullets = [0, 2, 4];
             return (
               <li
-                className="text-justify text-slate-300 md:text-left"
+                className={`text-justify ${
+                  highlightBullets.includes(index)
+                    ? "text-cream"
+                    : "text-slate-300"
+                } md:text-left`}
                 key={index}
               >
                 {paragraph}
@@ -48,6 +53,7 @@ const Bio = ({ bullets, quotedText, text, skills }: BioProps) => (
         </ul>
       </div>
     </div>
+    {/* Quoted text */}
     <div className="hidden w-[60%] self-center text-4xl lg:visible lg:flex">
       <div className="w-[70%] rounded-lg border-2 border-black bg-slate-800 p-6">
         <svg
@@ -62,7 +68,7 @@ const Bio = ({ bullets, quotedText, text, skills }: BioProps) => (
             fill="currentColor"
           />
         </svg>
-        <h4 className={`ml-4 italic text-slate-300 before:content-["\f10d"]`}>
+        <h4 className={`ml-4 italic text-cream before:content-["\f10d"]`}>
           {quotedText}
         </h4>
       </div>
