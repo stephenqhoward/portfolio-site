@@ -55,7 +55,7 @@ const EducationItem = ({
         )}
       </div>
       {projectTitle && (
-        <div className="w-full pl-0 lg:w-[62%] lg:pl-4">
+        <div className="w-full pl-0 lg:pl-4 xl:w-[54%]">
           <h4 className="text-xl font-bold italic text-cream">
             {projectTitle}
           </h4>

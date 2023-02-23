@@ -230,6 +230,11 @@ const Home: NextPage = () => {
                   text: "Live Site",
                 },
                 { type: "disabled", text: "GitHub", subtext: "(Private Repo)" },
+                {
+                  url: "/discingup/details",
+                  type: "details",
+                  text: "Details",
+                },
               ]}
               img={{
                 src: "/img/discing-up-thumbnail.png",
