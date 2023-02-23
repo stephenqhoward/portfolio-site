@@ -78,16 +78,23 @@ const Home: NextPage = () => {
           </section>
 
           <section
-            className="flex min-h-[40vh] flex-col flex-wrap bg-deep-blue px-4 pt-6 pb-12 md:px-28"
+            className="flex min-h-[40vh] w-full flex-row bg-deep-blue px-4 pt-6 pb-12"
             id="about"
           >
             <Bio
-              text={[
-                "I am a recent graduate of a 28-week coding boot camp, while working full time. I am no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.",
-                "I have a history of researching and implementing technical solutions to business problems.",
-                "You will find I am self-motivated, highly adaptable, and one who pays close attention to the details.",
-                `I am looking for experience that will provide awareness for what I don't know, the structure for high performing software development teams, and the core technical competency to prototype and scale startup ideas.`,
+              bullets={[
+                "... someone who in the Summer & Fall between finishing college and starting work, can study 12 hours a day and pass all four sections of the Certified Public Accountant exam.",
+                "... no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.",
+                "... a recent graduate of a 28-week full stack software engineering boot camp, while working full time.",
+                "... one who enjoys working on multiple levels of abstraction simultaneously.",
+                "... looking for an environment where I have the freedom to tackle difficult problems with mentor-level guidance, and receive regular feedback on best practices to perfect the deliverable.",
+                "Technically, I want to learn everything there is to prototype and scale ideas.",
               ]}
+              text={[
+                "Coding is work for some. It's play for me. I love shipping code.",
+                "Check out my portfolio section to see what I have shipped. I have most recently worked on Discing Up, which I am particularly proud of.",
+              ]}
+              quotedText="Coding is work for some. It's play for me. I love shipping code."
               skills={[
                 "JavaScript",
                 "Python",
