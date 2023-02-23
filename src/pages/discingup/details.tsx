@@ -130,11 +130,11 @@ const Content = () => {
             <span className="prose mr-1 rounded-md bg-[#00000065] p-1.5">
               git push origin &#60;feature_branch&#62;
             </span>
-            triggers Vercel to deploy the commits to a standalone preview
-            environment for that pull request.
+            to GitHub, triggers Vercel to deploy the commits to a standalone
+            Preview environment for that pull request.
           </li>
           <li className="">
-            Merged pull requests to staging and main trigger a Vercel deploy
+            Merged pull requests to Staging and Main trigger a Vercel deploy
             using the respective environment&apos;s variables{" "}
           </li>
           <li className="">
@@ -219,8 +219,8 @@ const Content = () => {
           A driving value of Discing Up is its ability to personalize the
           color-coding of hourly weather data. This enables the user to
           at-a-glance see which hours in the coming week will have playable
-          weather conditions. This value is seasonal to Spring, Winter and Fall
-          when inclement weather is predominant.
+          weather conditions. This value is seasonal to Spring and Winter when
+          inclement weather is predominant.
         </p>
         <iframe
           src="https://scribehow.com/embed/Discing_Up__Personalizing_Weather_Preferences__kvw0ZT8RQ4K02-LK6Lddrw"
@@ -250,6 +250,16 @@ const Content = () => {
           See How it Works
         </label>
       </div>
+      <div className="my-6 border-b-[2px] border-light-blue" />
+      <h5 className="mx-auto mb-6 text-xl text-cream">Check Out the App</h5>
+      <a
+        href="https://discingup.com/"
+        className="mx-auto h-16 w-32 rounded-xl bg-red text-lg font-bold duration-500 hover:bg-light-red motion-safe:hover:scale-110"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <button className="h-16 w-32 text-white">Live Site</button>
+      </a>
       {/* <div className="my-6 border-b-[2px] border-light-blue" />
       <h3 id="Roadmap">Roadmap to Launch</h3>
       <ul className="ml-5">
