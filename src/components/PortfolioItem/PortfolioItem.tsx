@@ -36,7 +36,7 @@ const PortfolioItem = ({
   imgPosition,
 }: PortfolioItemProps) => {
   return (
-    <div className="z-10 flex w-full flex-col flex-wrap space-y-4 rounded-lg border-2 border-blue p-4 pb-6 xl:flex-row">
+    <div className="z-10 flex w-full flex-col flex-wrap space-y-4 rounded-lg border-2 border-deep-blue bg-slate-400 p-4 pb-6 xl:flex-row">
       {img && imgPosition === "left" && (
         <PortfolioItemImage img={img} url={url} position={imgPosition} />
       )}

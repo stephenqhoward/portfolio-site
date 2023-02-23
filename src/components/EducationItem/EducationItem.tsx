@@ -25,16 +25,18 @@ const EducationItem = ({
   integratedApis,
 }: EducationItemProps) => {
   return (
-    <div className="z-10 flex w-full flex-col flex-wrap space-y-6 rounded-lg border-light-blue pb-6 text-lg text-cream lg:border-2 lg:p-4 lg:pl-0">
+    <div className="z-10 flex w-full flex-col flex-wrap space-y-6 rounded-lg border-light-blue bg-slate-800 pb-6 text-lg text-cream lg:border-2 lg:p-4 lg:pl-0">
       <div className="flex w-full flex-col space-y-2 pl-0 lg:pl-4">
         <a href={url} target="_blank" rel="noreferrer">
-          <h3 className="text-2xl font-bold text-cream">{institution}</h3>
+          <h3 className="mb-4 text-xl font-bold text-cream md:text-2xl">
+            {institution}
+          </h3>
         </a>
         <p>{description}</p>
         {honors && <p>Honors: {honors}</p>}
         {technologies && (
           <>
-            <p className="underline">Tech Stack</p>
+            <p className="text-center underline md:text-left">Tech Stack</p>
             <ul
               className={`flex w-[75%] flex-row flex-wrap items-center justify-center self-center sm:space-y-4 md:space-y-0 lg:w-[33%] lg:flex-nowrap lg:self-start ${styles["technologies-item-buttons"]}`}
             >
@@ -68,7 +70,9 @@ const EducationItem = ({
               );
             })}
           </ul>
-          <p className="pb-4 underline">External APIs Integrated</p>
+          <p className="pb-4 text-center underline md:text-left">
+            External APIs Integrated
+          </p>
           <ul
             className={`flex flex-row flex-wrap items-center justify-center self-center sm:space-y-4 md:space-y-0 lg:flex-nowrap lg:self-start ${styles["technologies-item-buttons"]}`}
           >
