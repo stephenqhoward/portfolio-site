@@ -25,8 +25,8 @@ const EducationItem = ({
   integratedApis,
 }: EducationItemProps) => {
   return (
-    <div className="z-10 flex w-full flex-col flex-wrap space-y-6 rounded-lg border-light-blue bg-slate-800 pb-6 text-lg text-cream lg:border-2 lg:p-4 lg:pl-0">
-      <div className="flex w-full flex-col space-y-2 pl-0 lg:pl-4">
+    <div className="flex w-full flex-col flex-wrap space-y-6 self-center rounded-lg border-light-blue bg-slate-800 pb-6 text-lg text-cream lg:w-[60%] lg:border-2 lg:p-4 lg:pl-0">
+      <div className="flex w-full flex-col space-y-2 px-2 lg:px-4">
         <a href={url} target="_blank" rel="noreferrer">
           <h3 className="mb-4 text-xl font-bold text-cream md:text-2xl">
             {institution}
@@ -36,9 +36,9 @@ const EducationItem = ({
         {honors && <p>Honors: {honors}</p>}
         {technologies && (
           <>
-            <p className="text-center underline md:text-left">Tech Stack</p>
+            <p className="text-center underline">Tech Stack</p>
             <ul
-              className={`flex w-[75%] flex-row flex-wrap items-center justify-center self-center sm:space-y-4 md:space-y-0 lg:w-[33%] lg:flex-nowrap lg:self-start ${styles["technologies-item-buttons"]}`}
+              className={`flex w-full flex-row flex-wrap items-center justify-center self-center sm:space-y-4 md:space-y-0 lg:w-[70%] lg:flex-nowrap ${styles["technologies-item-buttons"]}`}
             >
               {technologies?.map((img) => {
                 return (
@@ -57,7 +57,7 @@ const EducationItem = ({
         )}
       </div>
       {projectTitle && (
-        <div className="w-full pl-0 lg:pl-4 xl:w-[54%]">
+        <div className="w-full px-2 lg:px-4">
           <h4 className="text-xl font-bold italic text-cream">
             {projectTitle}
           </h4>
@@ -70,11 +70,10 @@ const EducationItem = ({
               );
             })}
           </ul>
-          <p className="pb-4 text-center underline md:text-left">
-            External APIs Integrated
-          </p>
+          <p className="pb-4 text-center underline">External APIs Integrated</p>
+          {/* lg:flex-nowrap */}
           <ul
-            className={`flex flex-row flex-wrap items-center justify-center self-center sm:space-y-4 md:space-y-0 lg:flex-nowrap lg:self-start ${styles["technologies-item-buttons"]}`}
+            className={`mx-auto flex w-full flex-row items-center md:w-[70%] ${styles["technologies-item-buttons"]} spae-y-4 md:space-y-0 lg:flex-nowrap`}
           >
             {integratedApis?.map((img) => {
               return (

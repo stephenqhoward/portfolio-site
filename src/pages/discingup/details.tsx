@@ -46,6 +46,7 @@ const DetailsDiscingUp: NextPage = () => {
             height="800"
             width="600"
             className="mx-auto max-w-xl"
+            priority
           />
         </label>
       </label>
