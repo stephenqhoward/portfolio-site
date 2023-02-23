@@ -59,12 +59,12 @@ const Home: NextPage = () => {
         <Navbar
           logo="SQH"
           subTitle="Portfolio Site"
-          links={[
+          jumpLinks={[
             { displayText: "About", anchor: "#about" },
             { displayText: "Portfolio", anchor: "#portfolio" },
             { displayText: "Education", anchor: "#education" },
-            { displayText: "Resume", anchor: "/resume" },
           ]}
+          pageLinks={[{ displayText: "Resume", anchor: "/resume" }]}
         />
 
         <div className="flex w-full flex-col items-center justify-center lg:container">
