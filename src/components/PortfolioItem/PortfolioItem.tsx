@@ -42,7 +42,7 @@ const PortfolioItem = ({
       )}
 
       <div className="flex flex-col space-y-6 self-center sm:w-[100%] lg:w-[80%] xl:w-[60%]">
-        <h3 className="text-center text-2xl font-bold text-deep-blue xl:text-left">
+        <h3 className="text-center text-3xl font-bold text-deep-blue xl:text-left">
           {title}
         </h3>
         <ul className="flex flex-row flex-wrap items-center justify-center sm:space-y-3 xl:flex-nowrap xl:justify-start xl:space-y-0">
