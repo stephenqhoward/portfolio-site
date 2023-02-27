@@ -20,7 +20,9 @@ export const DividerNavbar = () => {
 
 export const DividerHero = () => {
   return (
-    <div className={styles["wavy-divider-hero"]}>
+    <div
+      className={`${styles["wavy-divider-hero"]} border-b-1 border-deep-blue`}
+    >
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
