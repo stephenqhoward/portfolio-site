@@ -68,7 +68,7 @@ const Home: NextPage = () => {
         />
 
         <div className="flex w-full flex-col items-center justify-center lg:container">
-          <section className="relative flex min-h-[50vh] min-w-full flex-col items-center justify-center bg-black">
+          <section className="relative flex min-h-[50vh] min-w-full flex-col items-center justify-center bg-cream">
             <DividerNavbar />
             <Hero
               title={`Hi! I'm Stephen.`}
