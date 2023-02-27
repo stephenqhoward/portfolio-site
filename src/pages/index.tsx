@@ -91,10 +91,10 @@ const Home: NextPage = () => {
                 "Technically, I want to learn everything there is to prototype and scale ideas.",
               ]}
               text={[
-                "Coding is work for some. It's play for me. I love shipping code.",
+                "Coding is work for some - it's play for me. I love shipping code.",
                 "Discing Up is an app I have shipped most recently. I am proud of the challenges I have overcome to get this live, functional, and stable.",
               ]}
-              quotedText="Coding is work for some. It's play for me. I love shipping code."
+              quotedText="Coding is work for some - it's play for me. I love shipping code."
               skills={[
                 "JavaScript",
                 "Python",

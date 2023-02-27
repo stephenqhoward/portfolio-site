@@ -2,6 +2,8 @@ import { type NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+import { Navbar } from "../../components/Navbar";
+// Images
 import ArchitectureImg from "../../../public/img/architecture.png";
 import PreviewImageDiagram from "../../../public/img/PreviewImageDiagram.png";
 import InternalAPIRouting from "../../../public/img/InternalApiRouting.png";
@@ -14,19 +16,31 @@ const DetailsDiscingUp: NextPage = () => {
         <meta name="description" content="Discing Up - Details" />
       </Head>
       <main className="flex min-h-screen flex-col items-center bg-gradient-to-b from-[#457B9d] to-[#1D3557]">
-        <Link href="/">
+        <Navbar
+          logo="SQH"
+          subTitle="Discing Up Details"
+          jumpLinks={[]}
+          pageLinks={[{ displayText: "Back", anchor: "/" }]}
+        />
+
+        {/* <Link href="/">
           <div className="fixed left-8 top-8 flex h-16 w-32 justify-center rounded-xl bg-cream duration-500 hover:cursor-pointer hover:bg-light-blue motion-safe:hover:scale-110">
             <p className="m-auto text-2xl font-bold text-deep-blue">Back</p>
           </div>
-        </Link>
-        <div className="mx-auto flex w-full flex-col bg-deep-blue md:container">
+        </Link> */}
+        <div className="mx-auto flex w-full flex-col bg-deep-blue px-2 md:container">
           <h1 className="mt-12 text-center text-3xl font-bold text-cream">
             Discing <span className="text-orange">Up</span> - Details
           </h1>
-          <div className="my-14 mx-auto flex w-full flex-col md:w-[80%]">
-            {TableOfContents()}
-            <div className="my-6 border-b-[2px] border-light-blue" />
+          <div className="mx-auto my-4 flex w-full flex-col md:w-[80%]">
+            {/* {TableOfContents()} */}
+            <div className="my-6 mx-auto w-full border-b-[2px] border-light-blue" />
             {Content()}
+          </div>
+          <div className="flex justify-center">
+            <p className="rounded-3xl bg-deep-blue px-4 py-2 font-thin text-cream">
+              &copy; {new Date().getFullYear()} - Stephen Howard
+            </p>
           </div>
         </div>
       </main>
@@ -37,7 +51,7 @@ const DetailsDiscingUp: NextPage = () => {
       />
       <label htmlFor="PreviewImageDiagram" className="modal cursor-pointer">
         <label
-          className="md:w-3xl modal-box relative w-full max-w-none md:max-w-3xl"
+          className="md:w-3xl modal-box relative w-[90%] max-w-none md:max-w-3xl"
           htmlFor=""
         >
           <Image
@@ -45,7 +59,7 @@ const DetailsDiscingUp: NextPage = () => {
             alt="Dynamic Preview Image Diagram"
             height="800"
             width="600"
-            className="mx-auto max-w-xl"
+            className="mx-auto max-w-[270px] md:max-w-xl"
             priority
           />
         </label>
@@ -56,59 +70,59 @@ const DetailsDiscingUp: NextPage = () => {
 
 export default DetailsDiscingUp;
 
-const TableOfContents = () => {
-  return (
-    <>
-      <h3 className="text-lg font-bold">Table of Contents</h3>
-      <ol className="my-2 space-y-2 indent-5">
-        <li>
-          <Link
-            href="#Architecture"
-            className="text-light-blue hover:text-blue"
-          >
-            <h4 className="text-light-blue">
-              A. Architecture: Internal Processes, Hosting & External APIs
-            </h4>
-          </Link>
-          <ol className="space-y-1">
-            <Link href="#CI/CD" className="">
-              <li className="indent-10 hover:text-blue">1. CI/CD Workflows</li>
-            </Link>
-            <Link href="#InternalRouting" className="">
-              <li className="indent-10 hover:text-blue">2. Internal Routing</li>
-            </Link>
-            <Link href="#APIEndPoints" className="">
-              <li className="indent-10 hover:text-blue">3. API End Points</li>
-            </Link>
-          </ol>
-        </li>
-        <li>
-          <Link href="#KeyFeatures" className="text-light-blue hover:text-blue">
-            <h4>B. Key Features: Details you might miss</h4>
-          </Link>
-          <ol className="space-y-1">
-            <Link href="#WeatherPrefs" className="">
-              <li className="indent-10 hover:text-blue">
-                1. Course Page: Weather Preferences Settings
-              </li>
-            </Link>
-            <Link href="#DynamicPrevImg" className="">
-              <li className="indent-10 hover:text-blue">
-                2. Course Page: Dynamic Preview Image
-              </li>
-            </Link>
-          </ol>
-        </li>
-      </ol>
-    </>
-  );
-};
+// const TableOfContents = () => {
+//   return (
+//     <>
+//       <h3 className="text-lg font-bold">Table of Contents</h3>
+//       <ol className="my-2 space-y-2 indent-5">
+//         <li>
+//           <Link
+//             href="#Architecture"
+//             className="text-light-blue hover:text-blue"
+//           >
+//             <h4 className="text-light-blue">
+//               A. Architecture: Internal Processes, Hosting & External APIs
+//             </h4>
+//           </Link>
+//           <ol className="space-y-1">
+//             <Link href="#CI/CD" className="">
+//               <li className="indent-10 hover:text-blue">1. CI/CD Workflows</li>
+//             </Link>
+//             <Link href="#InternalRouting" className="">
+//               <li className="indent-10 hover:text-blue">2. Internal Routing</li>
+//             </Link>
+//             <Link href="#APIEndPoints" className="">
+//               <li className="indent-10 hover:text-blue">3. API End Points</li>
+//             </Link>
+//           </ol>
+//         </li>
+//         <li>
+//           <Link href="#KeyFeatures" className="text-light-blue hover:text-blue">
+//             <h4>B. Key Features: Details you might miss</h4>
+//           </Link>
+//           <ol className="space-y-1">
+//             <Link href="#WeatherPrefs" className="">
+//               <li className="indent-10 hover:text-blue">
+//                 1. Course Page: Weather Preferences Settings
+//               </li>
+//             </Link>
+//             <Link href="#DynamicPrevImg" className="">
+//               <li className="indent-10 hover:text-blue">
+//                 2. Course Page: Dynamic Preview Image
+//               </li>
+//             </Link>
+//           </ol>
+//         </li>
+//       </ol>
+//     </>
+//   );
+// };
 
 const Content = () => {
   return (
     <>
       {/* Architecture */}
-      <div className="mb-6 w-full space-y-6" id="Architecture">
+      <div className="mx-auto mb-6 w-full space-y-6" id="Architecture">
         <h3 className="text-3xl font-semibold">
           Architecture: Internal Processes, Hosting & External APIs
         </h3>
