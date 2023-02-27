@@ -78,7 +78,7 @@ const Home: NextPage = () => {
           </section>
 
           <section
-            className="flex min-h-[40vh] w-full flex-row bg-deep-blue px-4 pt-6 pb-12"
+            className="flex min-h-[40vh] w-full flex-row bg-deep-blue px-4 pt-4 pb-12"
             id="about"
           >
             <Bio
