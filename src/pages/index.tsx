@@ -244,7 +244,7 @@ const Home: NextPage = () => {
                 },
               ]}
               img={{
-                src: "https://www.discingup.com/discing-up-preview.png",
+                src: "/img/discing-up-preview.png",
                 alt: "Discing Up",
                 width: 375,
                 height: 400,
