@@ -55,7 +55,7 @@ const Bio = ({ bullets, quotedText, text, skills }: BioProps) => (
     </div>
     {/* Quoted text */}
     <div className="hidden w-[60%] self-center text-3xl lg:visible lg:flex">
-      <div className="w-[70%] rounded-lg border-2 border-black bg-slate-800 p-6">
+      <div className="w-[70%] rounded-lg border-2 border-black bg-slate-800 px-4 pt-4 pb-6">
         <svg
           aria-hidden="true"
           className="h-10 w-10 text-gray-400 dark:text-gray-500"
@@ -69,7 +69,7 @@ const Bio = ({ bullets, quotedText, text, skills }: BioProps) => (
           />
         </svg>
         <h4
-          className={`ml-4 text-center italic text-cream before:content-["\f10d"]`}
+          className={`ml-4 text-left italic text-cream before:content-["\f10d"]`}
         >
           {quotedText}
         </h4>
