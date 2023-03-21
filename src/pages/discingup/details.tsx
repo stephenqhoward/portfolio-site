@@ -21,12 +21,6 @@ const DetailsDiscingUp: NextPage = () => {
           jumpLinks={[]}
           pageLinks={[{ displayText: "Back", anchor: "/" }]}
         />
-
-        {/* <Link href="/">
-          <div className="fixed left-8 top-8 flex h-16 w-32 justify-center rounded-xl bg-cream duration-500 hover:cursor-pointer hover:bg-light-blue motion-safe:hover:scale-110">
-            <p className="m-auto text-2xl font-bold text-deep-blue">Back</p>
-          </div>
-        </Link> */}
         <div className="mx-auto flex w-full flex-col bg-deep-blue px-2 md:container">
           <h1 className="mt-12 text-center text-3xl font-bold text-cream">
             Discing <span className="text-orange">Up</span> - Details
@@ -68,54 +62,6 @@ const DetailsDiscingUp: NextPage = () => {
 };
 
 export default DetailsDiscingUp;
-
-// const TableOfContents = () => {
-//   return (
-//     <>
-//       <h3 className="text-lg font-bold">Table of Contents</h3>
-//       <ol className="my-2 space-y-2 indent-5">
-//         <li>
-//           <Link
-//             href="#Architecture"
-//             className="text-light-blue hover:text-blue"
-//           >
-//             <h4 className="text-light-blue">
-//               A. Architecture: Internal Processes, Hosting & External APIs
-//             </h4>
-//           </Link>
-//           <ol className="space-y-1">
-//             <Link href="#CI/CD" className="">
-//               <li className="indent-10 hover:text-blue">1. CI/CD Workflows</li>
-//             </Link>
-//             <Link href="#InternalRouting" className="">
-//               <li className="indent-10 hover:text-blue">2. Internal Routing</li>
-//             </Link>
-//             <Link href="#APIEndPoints" className="">
-//               <li className="indent-10 hover:text-blue">3. API End Points</li>
-//             </Link>
-//           </ol>
-//         </li>
-//         <li>
-//           <Link href="#KeyFeatures" className="text-light-blue hover:text-blue">
-//             <h4>B. Key Features: Details you might miss</h4>
-//           </Link>
-//           <ol className="space-y-1">
-//             <Link href="#WeatherPrefs" className="">
-//               <li className="indent-10 hover:text-blue">
-//                 1. Course Page: Weather Preferences Settings
-//               </li>
-//             </Link>
-//             <Link href="#DynamicPrevImg" className="">
-//               <li className="indent-10 hover:text-blue">
-//                 2. Course Page: Dynamic Preview Image
-//               </li>
-//             </Link>
-//           </ol>
-//         </li>
-//       </ol>
-//     </>
-//   );
-// };
 
 const Content = () => {
   return (
