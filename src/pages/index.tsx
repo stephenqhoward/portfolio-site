@@ -86,13 +86,10 @@ const Home: NextPage = () => {
                 "... someone who between finishing college and starting work, studied 12 hours a day for 6 months and passed all four sections of the Certified Public Accountant exam.",
                 "... no stranger to a demanding work environment, getting my start out of college in a Big Four public accounting firm.",
                 "... a recent graduate of a 28-week full stack software engineering boot camp, while working full time.",
-                "... one who enjoys working on multiple levels of abstraction simultaneously.",
                 "... looking for an environment where I have the freedom to tackle difficult problems with mentor-level guidance, and receive regular feedback on best practices to perfect the deliverable.",
-                "Technically, I want to learn everything there is to prototype and scale ideas.",
               ]}
               text={[
                 "Coding is work for some - it's play for me. I love shipping code.",
-                "Discing Up is an app I have shipped most recently. I am proud of the challenges I have overcome to get this live, functional, and stable.",
               ]}
               quotedText="Coding is work for some - it's play for me. I love shipping code."
               skills={[
@@ -290,10 +287,15 @@ const Home: NextPage = () => {
                 },
               ]}
               url="https://www.codeplatoon.org/"
-              projectTitle="Group Project: Ahead of the Game (AotG)"
+              projectTitle="Group Project: Ahead of the Game"
               projectDescription={[
                 "A service that enables users to integrate their favorite teams' schedule into Google Calendar and subscribe to event-start text notifications.",
-                "Personal Contribution: Google Calendar integration • CI/CD to Heroku using GitHub Actions • dependency managemet • database design • Mural & Trello board management",
+                "Personal Contribution: ",
+                "• Google Calendar integration",
+                "• CI/CD to Heroku using GitHub Actions",
+                "• Dependency managemet",
+                "• Database design",
+                "• Mural & Trello board management",
               ]}
               integratedApis={[
                 {
