@@ -95,16 +95,16 @@ const Home: NextPage = () => {
               skills={[
                 "JavaScript",
                 "Python",
+                "NextJs",
                 "ReactJs",
                 "Django",
-                "PostgreSQL",
-                "Typescript",
                 "Tailwind",
-                "HTML",
-                "CSS",
+                "Typescript",
+                "PostgreSQL",
                 "Git",
                 "GitHub",
-                "Slack",
+                "HTML",
+                "CSS",
               ]}
             />
           </section>
