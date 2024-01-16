@@ -31,6 +31,7 @@ import DjangoRestFrameworkLogo from "../../public/img/drf-logo.png";
 import GoogleCalendarLogo from "../../public/img/Google_Calendar_icon.svg";
 import FirebaseLogo from "../../public/img/firebase-icon.svg";
 import TwilioLogo from "../../public/img/Twilio-logo.svg";
+import DonorboxLogo from "../../public/img/donorbox.svg";
 
 const Home: NextPage = () => {
   return (
@@ -247,6 +248,64 @@ const Home: NextPage = () => {
                 height: 400,
               }}
               imgPosition="left"
+            />
+            <PortfolioItem
+              title="Germano For Judge - Campaign Website"
+              description="Campaign website for spreading awareness and collecting campaign contributions. Developed site based on client's template, walked them through using Donorbox for handling campaign contributions, and integrated Donorbox into the webpage."
+              technologies={[
+                {
+                  src: NextJsLogo,
+                  alt: "Next.js",
+                  width: 115,
+                  url: "https://nextjs.org/",
+                },
+                {
+                  src: ReactLogo,
+                  alt: "React.js",
+                  width: 40,
+                  url: "https://reactjs.org/",
+                },
+                {
+                  src: TypescriptLogo,
+                  alt: "Typescript",
+                  width: 35,
+                  url: "https://www.typescriptlang.org/",
+                },
+                {
+                  src: TailwindLogo,
+                  alt: "Tailwind CSS",
+                  width: 40,
+                  url: "https://tailwindcss.com/",
+                },
+                {
+                  src: VercelLogo,
+                  alt: "Vercel",
+                  width: 105,
+                  url: "https://vercel.com/",
+                },
+                {
+                  src: DonorboxLogo,
+                  alt: "Donorbox",
+                  width: 150,
+                  url: "https://donorbox.org/",
+                },
+              ]}
+              url="http://germanoforjudge2023.com"
+              buttons={[
+                {
+                  url: "http://germanoforjudge2023.com",
+                  type: "live",
+                  text: "Live Site",
+                },
+                { type: "disabled", text: "GitHub", subtext: "(Private Repo)" },
+              ]}
+              img={{
+                src: "/img/Germano-Thumbnail.png",
+                alt: "Germano Campaign Site",
+                width: 400,
+                height: 450,
+              }}
+              imgPosition="right"
             />
             <div className="pb-4"></div>
             <DividerEducation />
