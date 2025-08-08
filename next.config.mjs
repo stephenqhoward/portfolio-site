@@ -8,7 +8,6 @@
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-  swcMinify: true,
   eslint: {
     // Rely on dedicated npm run lint; don't block builds
     ignoreDuringBuilds: true,
