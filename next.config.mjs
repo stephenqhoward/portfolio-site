@@ -9,6 +9,10 @@
 const config = {
   reactStrictMode: true,
   swcMinify: true,
+  eslint: {
+    // Rely on dedicated npm run lint; don't block builds
+    ignoreDuringBuilds: true,
+  },
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
