@@ -79,7 +79,7 @@ const Home: NextPage = () => {
           </section>
 
           <section
-            className="flex min-h-[40vh] w-full flex-row bg-deep-blue px-4 pt-4 pb-12"
+            className="flex min-h-[40vh] w-full flex-row bg-deep-blue px-4 pb-12 pt-4"
             id="about"
           >
             <Bio
@@ -290,12 +290,11 @@ const Home: NextPage = () => {
                   url: "https://donorbox.org/",
                 },
               ]}
-              url="http://germanoforjudge2023.com"
               buttons={[
                 {
-                  url: "http://germanoforjudge2023.com",
-                  type: "live",
-                  text: "Live Site",
+                  type: "disabled",
+                  text: "Site Closed",
+                  subtext: "(Campaign Concluded)",
                 },
                 { type: "disabled", text: "GitHub", subtext: "(Private Repo)" },
               ]}
