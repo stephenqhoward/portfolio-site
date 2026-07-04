@@ -70,7 +70,21 @@ const PortfolioItem = ({
               return (
                 <a
                   href={button.url}
-                  className="h-16 w-32 rounded-xl bg-red text-lg font-bold duration-500 hover:bg-light-red motion-safe:hover:scale-110"
+                  className="h-16 w-32 rounded-xl bg-red text-lg font-bold duration-500 hover:bg-light-red motion-safe:hover:scale-105"
+                  target="_blank"
+                  rel="noreferrer"
+                  key={button.type}
+                >
+                  <button className="h-16 w-32 text-white">
+                    {button.text}
+                  </button>
+                </a>
+              );
+            } else if (button.type === "demo") {
+              return (
+                <a
+                  href={button.url}
+                  className="h-16 w-32 rounded-xl bg-deep-blue text-lg font-bold duration-500 hover:bg-light-blue motion-safe:hover:scale-105"
                   target="_blank"
                   rel="noreferrer"
                   key={button.type}
@@ -95,7 +109,7 @@ const PortfolioItem = ({
               return (
                 <a
                   href={button.url}
-                  className="mt-6 h-16 w-32 rounded-xl bg-deep-blue text-lg font-bold duration-500 hover:bg-light-blue motion-safe:hover:scale-110 sm:mt-0"
+                  className="mt-6 h-16 w-32 rounded-xl bg-deep-blue text-lg font-bold duration-500 hover:bg-light-blue motion-safe:hover:scale-105 sm:mt-0"
                   rel="noreferrer"
                   key={button.type}
                 >

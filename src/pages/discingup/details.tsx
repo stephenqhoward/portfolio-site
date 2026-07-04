@@ -214,7 +214,7 @@ const Content = () => {
       <h5 className="mx-auto mb-6 text-xl text-cream">Check Out the App</h5>
       <a
         href="https://discingup.com/"
-        className="mx-auto h-16 w-32 rounded-xl bg-red text-lg font-bold duration-500 hover:bg-light-red motion-safe:hover:scale-110"
+        className="mx-auto h-16 w-32 rounded-xl bg-red text-lg font-bold duration-500 hover:bg-light-red motion-safe:hover:scale-105"
         target="_blank"
         rel="noreferrer"
       >
