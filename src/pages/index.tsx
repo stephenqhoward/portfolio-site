@@ -32,6 +32,8 @@ import GoogleCalendarLogo from "../../public/img/Google_Calendar_icon.svg";
 import FirebaseLogo from "../../public/img/firebase-icon.svg";
 import TwilioLogo from "../../public/img/Twilio-logo.svg";
 import DonorboxLogo from "../../public/img/donorbox.svg";
+import ViteLogo from "../../public/img/vite.svg";
+import PhaserLogo from "../../public/img/phaser-logo.svg";
 
 const Home: NextPage = () => {
   return (
@@ -231,8 +233,8 @@ const Home: NextPage = () => {
               buttons={[
                 {
                   url: "https://discingup.com/",
-                  type: "live",
-                  text: "Live Site",
+                  type: "demo",
+                  text: "Demo Site",
                 },
                 { type: "disabled", text: "GitHub", subtext: "(Private Repo)" },
                 {
@@ -305,6 +307,57 @@ const Home: NextPage = () => {
                 height: 450,
               }}
               imgPosition="right"
+            />
+            <PortfolioItem
+              title="Castle Survivors (Game) - Spec Driven Developed"
+              description="This prototype for a game was generated entirely using spec-driven development with Cursor. Although still buggy, it provided a proof of concept, and a fairly robust map editor (see Admin -> Map Maker). A friend and I intend to continue this project in 2026 using Unreal Engine."
+              technologies={[
+                {
+                  src: PhaserLogo,
+                  alt: "Phaser",
+                  width: 80,
+                  url: "https://phaser.io/",
+                },
+                {
+                  src: ReactLogo,
+                  alt: "React.js",
+                  width: 40,
+                  url: "https://reactjs.org/",
+                },
+                {
+                  src: TypescriptLogo,
+                  alt: "Typescript",
+                  width: 35,
+                  url: "https://www.typescriptlang.org/",
+                },
+                {
+                  src: TailwindLogo,
+                  alt: "Tailwind CSS",
+                  width: 40,
+                  url: "https://tailwindcss.com/",
+                },
+                {
+                  src: ViteLogo,
+                  alt: "Vite",
+                  width: 40,
+                  url: "https://vitejs.dev/",
+                },
+              ]}
+              url="https://castle-survivors-nine.vercel.app/"
+              buttons={[
+                {
+                  url: "https://castle-survivors-nine.vercel.app/",
+                  type: "live",
+                  text: "Live Site",
+                },
+              ]}
+              img={{
+                src: "/img/castle-survivors-preview.png",
+                alt: "Castle Survivors landing page",
+                width: 340,
+                height: 400,
+              }}
+              imgPosition="left"
             />
             <div className="pb-4"></div>
             <DividerEducation />
